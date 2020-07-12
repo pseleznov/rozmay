@@ -7,8 +7,6 @@ const NavbarItem = (props) => {
 
     const [hasSubItems, handleClick] = useState(false);
 
-    console.log(hasSubItems)
-
     return <div>
         <div className={styles.navbarItem} onClick={() => handleClick(!hasSubItems)}>
             {props.title}
@@ -17,7 +15,7 @@ const NavbarItem = (props) => {
             [styles.disable]: hasSubItems
         })}>
             {props.subTitles.map(item => {
-                return <div className={styles.subItem}>{item}</div>
+                return <div className={styles.subItem} key={item}>{item}</div>
             })}
         </div>
     </div>
