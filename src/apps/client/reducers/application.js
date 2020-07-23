@@ -2,10 +2,10 @@ import {
     SET_PRODUCTS
 } from '../types/types';
 
-// import data from '../../../seeds/data'
-// [].concat(...data)
+import data from '../../../seeds/data';
+
 const initialState = {
-    products: null
+    products: [].concat(...data)
 };
 
 export default function (state = initialState, action) {

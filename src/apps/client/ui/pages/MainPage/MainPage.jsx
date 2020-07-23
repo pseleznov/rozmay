@@ -1,25 +1,29 @@
 import React from 'react';
-import { useSelector, useDispatch, connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './MainPage.css';
 import Navbar from '../../components/Navbar/Navbar';
 
-const mapStateToProps = ({ application }) => {
-    console.log(application.products)
-    return {
-        products: application.products
-    }
-};
-
 const MainPage = (props) => {
-    // const state = useSelector(state => state);
-    // console.log(props.products);
+    const products = useSelector(({ application }) => application.products);
+    console.log(products);
 
     return <div className='mainPageContainer'>
         <Navbar />
         <div className='contentContainer'>
-
+            <div className='content'>
+                {products.map((item, i) => {
+                    return (
+                        <div className='product' key={i}>
+                            <div className='product_img_container'>
+                                <img className='product_img' src="https://i.pinimg.com/originals/94/1a/16/941a1638848c06d3d83139f2ba267c9d.jpg" alt="product" />
+                            </div>
+                            <div className='product_name'>{item.name}</div>
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     </div>
 };
 
-export default connect(mapStateToProps, null)(MainPage);
+export default MainPage;
