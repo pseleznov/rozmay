@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import classNames from 'classnames'
+import React, { useState } from 'react';
+import classNames from 'classnames';
 
-import styles from './NavbarItem.module.css'
+import styles from './NavbarItem.module.css';
 
 const NavbarItem = (props) => {
 
