@@ -14,7 +14,7 @@ function App() {
         <Header />
         <div className="pageContent">
           <Switch>
-            <Route exact path={`/main`} render={props => <MainPage {...props} />} />
+            <Route exact path={`/`} render={props => <MainPage {...props} />} />
           </Switch>
         </div>
         <Footer />

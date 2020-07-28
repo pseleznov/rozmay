@@ -15,7 +15,7 @@ const MainPage = (props) => {
                     return (
                         <div className='product' key={i}>
                             <div className='product_img_container'>
-                                <img className='product_img' src="https://i.pinimg.com/originals/94/1a/16/941a1638848c06d3d83139f2ba267c9d.jpg" alt="product" />
+                                <img className='product_img' src="https://i.imgur.com/XPGk2Re.jpg" alt="product" />
                             </div>
                             <div className='product_name'>{item.name}</div>
                         </div>
