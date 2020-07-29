@@ -9,12 +9,25 @@
 .navbarItem {
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     width: 100%;
     background: rgb(3, 110, 110);
-    cursor: pointer;
     user-select: none;
+    color: white;
+}
+
+.navbarItem a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbarItem a.active {
+    color: gold;
+}
+
+.group {
+    cursor: pointer;
 }
 
 .itemContent {
@@ -27,8 +40,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
-    transition: all 0.3s ease-in;
+    margin-top: 15px;
 }
 
 .subItem {
