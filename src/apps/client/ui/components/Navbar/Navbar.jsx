@@ -7,13 +7,13 @@ import styles from './Navbar.module.css'
 
 const subtitles = {
     girls: [
-        { title: 'Блузки', link: '/' },
-        { title: 'Плаття', link: '/' },
-        { title: 'Спіднички', link: '/' }
+        { title: 'Блузки', link: '/clothes-for-girls-blouses' },
+        { title: 'Плаття', link: '/clothes-for-girls-dresses' },
+        { title: 'Спіднички', link: '/clothes-for-girls-skirts' }
     ],
     boys: [
-        { title: 'Сорочки', link: '/' },
-        { title: 'Шаровари', link: '/' },
+        { title: 'Сорочки', link: '/clothes-for-boys-shirt' },
+        { title: 'Шаровари', link: '/clothes-for-boys-trousers' },
     ]
 };
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={styles.navbarContainer}>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/mens-shirt'}
                     activeClassName={styles.active}
                 >
                     Чоловічі сорочки
@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/womens-blouses'}
                     activeClassName={styles.active}
                 >
                     Жіночі блузки
@@ -41,7 +41,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/womens-dresses'}
                     activeClassName={styles.active}
                 >
                     Жіночі сукні
@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/paired-suits'}
                     activeClassName={styles.active}
                 >
                     Парні костюми
@@ -67,7 +67,7 @@ const Navbar = () => {
                                 key={i}
                             >
                                 <NavLink
-                                    exact to={'/'}
+                                    to={item.link}
                                     activeClassName={styles.active}
                                 >
                                     {item.title}
@@ -89,7 +89,7 @@ const Navbar = () => {
                                 key={i}
                             >
                                 <NavLink
-                                    exact to={'/'}
+                                    to={item.link}
                                     activeClassName={styles.active}
                                 >
                                     {item.title}
@@ -101,7 +101,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/stage-clothes'}
                     activeClassName={styles.active}
                 >
                     Сценічний одяг
@@ -109,7 +109,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/tracksuits'}
                     activeClassName={styles.active}
                 >
                     Спортивні костюми
@@ -117,7 +117,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/scene-design'}
                     activeClassName={styles.active}
                 >
                     Оформлення сцен
@@ -125,7 +125,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    exact to={'/'}
+                    to={'/trifles'}
                     activeClassName={styles.active}
                 >
                     Дрібнички і не тільки
