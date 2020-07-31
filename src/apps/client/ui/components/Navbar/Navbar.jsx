@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={styles.navbarContainer}>
             <div className={styles.navbarItem}>
                 <NavLink
-                    to={'/mens-shirt'}
+                    to={'/men-shirt'}
                     activeClassName={styles.active}
                 >
                     Чоловічі сорочки
@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    to={'/womens-blouses'}
+                    to={'/women-blouses'}
                     activeClassName={styles.active}
                 >
                     Жіночі блузки
@@ -41,7 +41,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
                 <NavLink
-                    to={'/womens-dresses'}
+                    to={'/women-dresses'}
                     activeClassName={styles.active}
                 >
                     Жіночі сукні
