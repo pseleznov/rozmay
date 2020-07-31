@@ -2,10 +2,10 @@ import {
     SET_PRODUCTS
 } from '../types/types';
 
-import data from '../../../seeds/data';
+import DEFAULT_PRODUCTS from '../defaultProps/products';
 
 const initialState = {
-    products: [].concat(...data)
+    products: DEFAULT_PRODUCTS
 };
 
 export default function (state = initialState, action) {
