@@ -2,7 +2,6 @@ import {
     SET_PRODUCTS
 } from '../types/types';
 
-import DEFAULT_PRODUCTS from '../defaultProps/products';
 import data from '../../../seeds/data';
 
 const initialState = {
