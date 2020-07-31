@@ -3,7 +3,9 @@ const data = [
         productId: 'mens-shirt',
         value: [
             {
-
+                article: 'Ч0010',
+                price: 'від 100 грн',
+                photo: 'https://i.imgur.com/A7PTQVH.jpg'
             }
         ]
     },
@@ -11,97 +13,55 @@ const data = [
         productId: 'womens-blouses',
         value: [
             {
-
+                article: 'Ж0010',
+                price: 'від 200 грн',
+                photo: 'https://i.imgur.com/Wy2i7V4.jpg'
             }
         ]
     },
     {
         productId: 'womens-dresses',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'paired-suits',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'clothes-for-girls-blouses',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'clothes-for-girls-dresses',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'clothes-for-girls-skirts',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'clothes-for-boys-shirt',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'clothes-for-boys-trousers',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'stage-clothes',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'tracksuits',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'scene-design',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     },
     {
         productId: 'trifles',
-        value: [
-            {
-
-            }
-        ]
+        value: []
     }
 ]
 

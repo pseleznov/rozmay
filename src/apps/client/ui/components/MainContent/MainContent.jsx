@@ -9,9 +9,10 @@ const MainContent = (props) => {
                     return (
                         <div className='product' key={i}>
                             <div className='product_img_container'>
-                                <img className='product_img' src="https://i.imgur.com/XPGk2Re.jpg" alt="product" />
+                                <img className='product_img' src={item.photo} alt="product" />
                             </div>
-                            <div className='product_name'>{item.name}</div>
+                            <div className='product_price'>{item.price}</div>
+                            <div className='product_article'>{item.article}</div>
                         </div>
                     );
                 })}
