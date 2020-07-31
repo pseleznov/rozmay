@@ -1,6 +1,6 @@
 const data = [
     {
-        productId: 'mens-shirt',
+        productId: 'men-shirt',
         value: [
             {
                 article: 'Ч0010',
@@ -10,7 +10,7 @@ const data = [
         ]
     },
     {
-        productId: 'womens-blouses',
+        productId: 'women-blouses',
         value: [
             {
                 article: 'Ж0010',
@@ -20,7 +20,7 @@ const data = [
         ]
     },
     {
-        productId: 'womens-dresses',
+        productId: 'women-dresses',
         value: []
     },
     {

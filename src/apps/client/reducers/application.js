@@ -3,9 +3,10 @@ import {
 } from '../types/types';
 
 import DEFAULT_PRODUCTS from '../defaultProps/products';
+import data from '../../../seeds/data';
 
 const initialState = {
-    products: DEFAULT_PRODUCTS
+    products: data
 };
 
 export default function (state = initialState, action) {
