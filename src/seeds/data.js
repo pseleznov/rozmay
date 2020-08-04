@@ -3,7 +3,18 @@ const data = [
         productId: 'men-shirt',
         value: [
             {
-                article: 'Ч0010',
+                price: 'від 100 грн',
+                photo: 'https://i.imgur.com/A7PTQVH.jpg'
+            },
+            {
+                price: 'від 100 грн',
+                photo: 'https://i.imgur.com/A7PTQVH.jpg'
+            },
+            {
+                price: 'від 100 грн',
+                photo: 'https://i.imgur.com/A7PTQVH.jpg'
+            },
+            {
                 price: 'від 100 грн',
                 photo: 'https://i.imgur.com/A7PTQVH.jpg'
             }
@@ -13,7 +24,14 @@ const data = [
         productId: 'women-blouses',
         value: [
             {
-                article: 'Ж0010',
+                price: 'від 200 грн',
+                photo: 'https://i.imgur.com/Wy2i7V4.jpg'
+            },
+            {
+                price: 'від 200 грн',
+                photo: 'https://i.imgur.com/Wy2i7V4.jpg'
+            },
+            {
                 price: 'від 200 грн',
                 photo: 'https://i.imgur.com/Wy2i7V4.jpg'
             }

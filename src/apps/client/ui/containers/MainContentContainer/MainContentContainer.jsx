@@ -9,7 +9,6 @@ const MainContentContainer = ({ match }) => {
     const products = useSelector(({ application }) => application.products);
 
     const filteredProducts = productsFilter(addArticles(products), match.params);
-    console.log(filteredProducts)
 
     const productsToShow = filteredProducts 
         ? filteredProducts.value 

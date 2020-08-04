@@ -1,17 +1,14 @@
+import articles from '../../../../../../seeds/articles'
+
 const addArticles = (products) => {
+    const productsWithArticles = products
+        .map(section => ({...section, value: section.value
+            .map((product, i) => ({...product, article: articles
+                .find(item => item.product === section.productId).article + `${10+i}`
+            }))
+        }));
 
-    // const menShirts = products
-    //     .find(item => item.productId === 'mens-shirt');
-
-    // const menShirtsWithArticles = {
-    //     ...menShirts,
-    //     value: [...menShirts.value.map((item, i) => ({...item, article: `Ч00${10+i}`}))]
-    // };
-
-    // console.log(menShirtsWithArticles);
-
-
-    return products;
+    return productsWithArticles;
 }
 
 export default addArticles;
