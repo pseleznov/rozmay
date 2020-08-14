@@ -15,7 +15,9 @@ function App() {
         <Header />
         <div className="pageContent">
           <Switch>
-            <Route exact path={`/:section?`} render={props => <MainPage {...props} />} />
+            <Route exact path={`/`} render={props => <MainPage {...props} />} />
+            <Route exact path={`/products/:section?`} render={props => <MainPage {...props} />} />
+            <Route exact path={`/about`} render={props => <div />} />
           </Switch>
         </div>
         <Footer />

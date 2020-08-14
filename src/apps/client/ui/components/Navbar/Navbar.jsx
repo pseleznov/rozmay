@@ -7,13 +7,13 @@ import styles from './Navbar.module.css'
 
 const subtitles = {
     girls: [
-        { title: 'Блузки', link: '/clothes-for-girls-blouses' },
-        { title: 'Плаття', link: '/clothes-for-girls-dresses' },
-        { title: 'Спіднички', link: '/clothes-for-girls-skirts' }
+        { title: 'Блузки', link: '/products/clothes-for-girls-blouses' },
+        { title: 'Плаття', link: '/products/clothes-for-girls-dresses' },
+        { title: 'Спіднички', link: '/products/clothes-for-girls-skirts' }
     ],
     boys: [
-        { title: 'Сорочки', link: '/clothes-for-boys-shirt' },
-        { title: 'Шаровари', link: '/clothes-for-boys-trousers' },
+        { title: 'Сорочки', link: '/products/clothes-for-boys-shirt' },
+        { title: 'Шаровари', link: '/products/clothes-for-boys-trousers' },
     ]
 };
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className={styles.navbarItems}>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/men-shirt'}
+                            to={'/products/men-shirt'}
                             activeClassName={styles.active}
                         >
                             Чоловічі сорочки
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/women-blouses'}
+                            to={'/products/women-blouses'}
                             activeClassName={styles.active}
                         >
                             Жіночі блузки
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/women-dresses'}
+                            to={'/products/women-dresses'}
                             activeClassName={styles.active}
                         >
                             Жіночі сукні
@@ -52,7 +52,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/paired-suits'}
+                            to={'/products/paired-suits'}
                             activeClassName={styles.active}
                         >
                             Парні костюми
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/stage-clothes'}
+                            to={'/products/stage-clothes'}
                             activeClassName={styles.active}
                         >
                             Сценічний одяг
@@ -112,7 +112,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/tracksuits'}
+                            to={'/products/tracksuits'}
                             activeClassName={styles.active}
                         >
                             Спортивні костюми
@@ -120,7 +120,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/scene-design'}
+                            to={'/products/scene-design'}
                             activeClassName={styles.active}
                         >
                             Оформлення сцен
@@ -128,7 +128,7 @@ const Navbar = () => {
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
-                            to={'/trifles'}
+                            to={'/products/trifles'}
                             activeClassName={styles.active}
                         >
                             Дрібнички і не тільки
