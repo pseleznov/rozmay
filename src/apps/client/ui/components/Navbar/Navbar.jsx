@@ -32,7 +32,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Чоловічі сорочки
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -40,7 +40,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Жіночі блузки
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -48,7 +48,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Жіночі сукні
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -56,7 +56,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Парні костюми
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleGirlsClick(!showGirlsSubItems)}>
                         Одяг для дівчаток
@@ -74,7 +74,7 @@ const Navbar = () => {
                                             activeClassName={styles.active}
                                         >
                                             {item.title}
-                                        </NavLink>
+                                                </NavLink>
                                     </div>
                                 );
                             })}
@@ -96,7 +96,7 @@ const Navbar = () => {
                                             activeClassName={styles.active}
                                         >
                                             {item.title}
-                                        </NavLink>
+                                                </NavLink>
                                     </div>
                                 );
                             })}
@@ -108,7 +108,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Сценічний одяг
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -116,7 +116,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Спортивні костюми
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -124,7 +124,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Оформлення сцен
-                </NavLink>
+                        </NavLink>
                     </div>
                     <div className={styles.navbarItem}>
                         <NavLink
@@ -132,7 +132,7 @@ const Navbar = () => {
                             activeClassName={styles.active}
                         >
                             Дрібнички і не тільки
-                </NavLink>
+                        </NavLink>
                     </div>
                 </div>
             </div>
