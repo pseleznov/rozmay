@@ -6,6 +6,7 @@ import Footer from './ui/components/Footer/Footer';
 import MainPage from './ui/pages/MainPage/MainPage';
 
 import './App.css';
+import '../../fonts/fonts.css'
 
 function App() {
   return (
