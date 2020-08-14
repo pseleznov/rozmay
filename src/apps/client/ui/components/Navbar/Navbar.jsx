@@ -23,113 +23,118 @@ const Navbar = () => {
 
     return (
         <div className={styles.navbarContainer}>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/men-shirt'}
-                    activeClassName={styles.active}
-                >
-                    Чоловічі сорочки
+            <div className={styles.contentContainer}>
+                <div className={styles.title}>КАТАЛОГ</div>
+                <div className={styles.navbarItems}>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/men-shirt'}
+                            activeClassName={styles.active}
+                        >
+                            Чоловічі сорочки
                 </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/women-blouses'}
-                    activeClassName={styles.active}
-                >
-                    Жіночі блузки
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/women-blouses'}
+                            activeClassName={styles.active}
+                        >
+                            Жіночі блузки
                 </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/women-dresses'}
-                    activeClassName={styles.active}
-                >
-                    Жіночі сукні
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/women-dresses'}
+                            activeClassName={styles.active}
+                        >
+                            Жіночі сукні
                 </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/paired-suits'}
-                    activeClassName={styles.active}
-                >
-                    Парні костюми
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/paired-suits'}
+                            activeClassName={styles.active}
+                        >
+                            Парні костюми
                 </NavLink>
-            </div>
-            <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleGirlsClick(!showGirlsSubItems)}>
-                Одяг для дівчаток
+                    </div>
+                    <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleGirlsClick(!showGirlsSubItems)}>
+                        Одяг для дівчаток
                 <div className={classNames(styles.itemContent, {
-                [styles.disable]: !showGirlsSubItems
-            })}>
-                    {subtitles.girls.map((item, i) => {
-                        return (
-                            <div
-                                className={styles.subItem}
-                                key={i}
-                            >
-                                <NavLink
-                                    to={item.link}
-                                    activeClassName={styles.active}
-                                >
-                                    {item.title}
-                                </NavLink>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-            <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleBoysClick(!showBoysSubItems)}>
-                Одяг для хлопчиків
+                        [styles.disable]: !showGirlsSubItems
+                    })}>
+                            {subtitles.girls.map((item, i) => {
+                                return (
+                                    <div
+                                        className={styles.subItem}
+                                        key={i}
+                                    >
+                                        <NavLink
+                                            to={item.link}
+                                            activeClassName={styles.active}
+                                        >
+                                            {item.title}
+                                        </NavLink>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                    <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleBoysClick(!showBoysSubItems)}>
+                        Одяг для хлопчиків
                 <div className={classNames(styles.itemContent, {
-                [styles.disable]: !showBoysSubItems
-            })}>
-                    {subtitles.boys.map((item, i) => {
-                        return (
-                            <div
-                                className={styles.subItem}
-                                key={i}
-                            >
-                                <NavLink
-                                    to={item.link}
-                                    activeClassName={styles.active}
-                                >
-                                    {item.title}
-                                </NavLink>
-                            </div>
-                        );
-                    })}
+                        [styles.disable]: !showBoysSubItems
+                    })}>
+                            {subtitles.boys.map((item, i) => {
+                                return (
+                                    <div
+                                        className={styles.subItem}
+                                        key={i}
+                                    >
+                                        <NavLink
+                                            to={item.link}
+                                            activeClassName={styles.active}
+                                        >
+                                            {item.title}
+                                        </NavLink>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/stage-clothes'}
+                            activeClassName={styles.active}
+                        >
+                            Сценічний одяг
+                </NavLink>
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/tracksuits'}
+                            activeClassName={styles.active}
+                        >
+                            Спортивні костюми
+                </NavLink>
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/scene-design'}
+                            activeClassName={styles.active}
+                        >
+                            Оформлення сцен
+                </NavLink>
+                    </div>
+                    <div className={styles.navbarItem}>
+                        <NavLink
+                            to={'/trifles'}
+                            activeClassName={styles.active}
+                        >
+                            Дрібнички і не тільки
+                </NavLink>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/stage-clothes'}
-                    activeClassName={styles.active}
-                >
-                    Сценічний одяг
-                </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/tracksuits'}
-                    activeClassName={styles.active}
-                >
-                    Спортивні костюми
-                </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/scene-design'}
-                    activeClassName={styles.active}
-                >
-                    Оформлення сцен
-                </NavLink>
-            </div>
-            <div className={styles.navbarItem}>
-                <NavLink
-                    to={'/trifles'}
-                    activeClassName={styles.active}
-                >
-                    Дрібнички і не тільки
-                </NavLink>
             </div>
         </div>
     );

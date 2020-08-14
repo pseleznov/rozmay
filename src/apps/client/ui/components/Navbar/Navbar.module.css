@@ -6,6 +6,27 @@
     border-right: 1px solid white;
 }
 
+.contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: Raleway;
+}
+
+.title {
+    width: 100%;
+    font-size: 36px;
+    padding: 10px 0;
+    text-align: center;
+    color: #1F4214;
+}
+
+.navbarItems {
+    width: 100%;
+}
+
 .navbarItem {
     font-size: 14px;
     line-height: 16px;
