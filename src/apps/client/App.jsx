@@ -7,10 +7,12 @@ import MainPage from './ui/pages/MainPage/MainPage';
 
 import './App.css';
 import '../../fonts/fonts.css'
+import Helmet from './ui/components/Helmet/Helmet';
 
 function App() {
   return (
     <main>
+      <Helmet />
       <div className="page">
         <Header />
         <div className="pageContent">
