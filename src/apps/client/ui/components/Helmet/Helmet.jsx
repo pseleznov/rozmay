@@ -27,10 +27,10 @@ class Helmet extends Component {
     }
 
     getMeta = ({ location: { pathname } }) => {
-        const NOT_FOUND_ROUTE_ID = 'notFound';
+        // const NOT_FOUND_ROUTE_ID = 'notFound';
         /* eslint-disable-next-line max-len */
         const KEYWORDS = 'вишиванки, свята, святковий одяг, новорічні костюми, сценічний одяг, сцена, костюми для виступів, пошиття костюмів';
-        const IMAGE = '/src/apps/client/ui/components/Header/img/banner.png';
+        const IMAGE = '/src/apps/client/ui/components/Header/img/logo.svg';
         const SITE_NAME = 'Rozmay';
        
         const match = routes.find(item => item.path === pathname)
@@ -43,10 +43,10 @@ class Helmet extends Component {
                 siteName: SITE_NAME,
                 keywords: KEYWORDS,
                 image: IMAGE,
-                canonical: `${pathname}`,
-                langLinks: [
-                    { lang: 'ua', link: `${pathname}` }
-                ]
+                canonical: `${pathname}`
+                // langLinks: [
+                //     { lang: 'ua', link: `${pathname}` }
+                // ]
             };
         }
 
@@ -66,7 +66,7 @@ class Helmet extends Component {
             <meta name='og:image' content={meta.image} />
             <meta name='keywords' content={meta.keywords} />
             <link rel='canonical' href={meta.canonical} />
-            {meta.langLinks.map((langLink, i) => <link key={i} rel='alternate' hreflang={langLink.lang} href={langLink.link} />)}
+            {/* {meta.langLinks.map((langLink, i) => <link key={i} rel='alternate' hreflang={langLink.lang} href={langLink.link} />)} */}
         </ReactHelmet>;
     }
 }
