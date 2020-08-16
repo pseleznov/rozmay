@@ -58,11 +58,13 @@ const Navbar = () => {
                             Парні костюми
                         </NavLink>
                     </div>
-                    <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleGirlsClick(!showGirlsSubItems)}>
-                        Одяг для дівчаток
-                <div className={classNames(styles.itemContent, {
-                        [styles.disable]: !showGirlsSubItems
-                    })}>
+                    <div className={classNames(styles.navbarItem, styles.group)}>
+                        <div className={styles.groupTitle} onClick={() => handleGirlsClick(!showGirlsSubItems)}>
+                            Одяг для дівчаток
+                        </div>
+                        <div className={classNames(styles.itemContent, {
+                            [styles.disable]: !showGirlsSubItems
+                        })}>
                             {subtitles.girls.map((item, i) => {
                                 return (
                                     <div
@@ -80,11 +82,13 @@ const Navbar = () => {
                             })}
                         </div>
                     </div>
-                    <div className={classNames(styles.navbarItem, styles.group)} onClick={() => handleBoysClick(!showBoysSubItems)}>
-                        Одяг для хлопчиків
-                <div className={classNames(styles.itemContent, {
-                        [styles.disable]: !showBoysSubItems
-                    })}>
+                    <div className={classNames(styles.navbarItem, styles.group)}>
+                        <div className={styles.groupTitle} onClick={() => handleBoysClick(!showBoysSubItems)}>
+                            Одяг для хлопчиків
+                        </div>
+                        <div className={classNames(styles.itemContent, {
+                            [styles.disable]: !showBoysSubItems
+                        })}>
                             {subtitles.boys.map((item, i) => {
                                 return (
                                     <div
