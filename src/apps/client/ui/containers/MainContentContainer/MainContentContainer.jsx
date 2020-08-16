@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import MainContent from '../../components/MainContent/MainContent';
 import productsFilter from './helpers/productsFilter';
 import addArticles from './helpers/addArticles';
+import showAllProducts from './helpers/showAllProducts';
 
 const MainContentContainer = ({ match }) => {
     const products = useSelector(({ application }) => application.products);
@@ -12,7 +13,7 @@ const MainContentContainer = ({ match }) => {
 
     const productsToShow = filteredProducts 
         ? filteredProducts.value 
-        : products.flatMap(item => item.value);
+        : showAllProducts(products);
 
     return <MainContent products={productsToShow} />;
 }
