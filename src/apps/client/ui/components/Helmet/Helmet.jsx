@@ -30,7 +30,7 @@ class Helmet extends Component {
         // const NOT_FOUND_ROUTE_ID = 'notFound';
         /* eslint-disable-next-line max-len */
         const KEYWORDS = 'вишиванки, свята, святковий одяг, новорічні костюми, сценічний одяг, сцена, костюми для виступів, пошиття костюмів';
-        const IMAGE = '/src/apps/client/ui/components/Header/img/logo.svg';
+        const IMAGE = 'https://i.imgur.com/nTkETjE.png';
         const SITE_NAME = 'Rozmay';
        
         const match = routes.find(item => item.path === pathname)
