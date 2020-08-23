@@ -70,12 +70,13 @@
 
 .bannerTextBlock {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 16px;
     display: flex;
     justify-content: center;
 }
 
 .bannerText {
+    text-align: center;
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
