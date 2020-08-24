@@ -5,6 +5,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .aboutPage_banner {
@@ -127,10 +128,21 @@
     position: fixed;
     z-index: 20;
     right: 30px;
-    bottom: 170px;
+    bottom: 20px;
 }
 
 .aboutPage_logo svg {
     height: 100%;
     width: auto;
+}
+
+.aboutPage_logo_absolute {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.aboutPage_anchor {
+    width: 100%;
+    height: 1px;
 }
