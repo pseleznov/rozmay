@@ -7,7 +7,6 @@ import './AboutPage.css';
 class AboutPage extends Component {
 
     anchor = React.createRef();
-    scroll = React.createRef();
 
     state = {
         inView: false
@@ -42,7 +41,7 @@ class AboutPage extends Component {
 
     render() {
         return (
-            <section className='aboutPageContainer' ref={this.scroll}>
+            <section className='aboutPageContainer'>
                 <div className={classNames(
                     'aboutPage_logo', {
                     'aboutPage_logo_absolute': this.state.inView
