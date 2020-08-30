@@ -54,12 +54,12 @@ class Navbar extends Component {
                             navbar.map((item, i) => {
                                 if (item.isGroup) {
                                     return (
-                                        <div className={classNames(styles.navbarItem, styles.group)}>
+                                        <div className={classNames(styles.navbarItem, styles.group)} key={i}>
                                             <div className={styles.groupTitle} onClick={this.handleClick(item.name)}>
                                                 {item.name}
                                             </div>
                                             <div className={classNames(styles.itemContent, {
-                                                [styles.disable]: this.state[item.name]
+                                                [styles.disable]: !this.state[item.name]
                                             })}>
                                                 {item.group.map((item, i) => {
                                                     return (
@@ -81,7 +81,7 @@ class Navbar extends Component {
                                     ) 
                                 } else {
                                     return (
-                                        <div className={styles.navbarItem}>
+                                        <div className={styles.navbarItem} key={i}>
                                             <NavLink
                                                 to={`${item.link}`}
                                                 activeClassName={styles.active}
