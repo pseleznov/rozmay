@@ -3,10 +3,13 @@ import {
 } from '../types/types';
 
 import data from '../../../seeds/data';
+import langMap from '../../../seeds/langMap';
+import DEFAULT_LANG from '../constant/constant'
 
 const initialState = {
     products: data,
-    isPopupProductShown: false
+    isPopupProductShown: false,
+    langMap: langMap[DEFAULT_LANG]
 };
 
 export default function (state = initialState, action) {
