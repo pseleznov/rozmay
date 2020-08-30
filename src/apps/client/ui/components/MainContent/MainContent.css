@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: rgb(95, 236, 59);
+    background-color: white;
 }
 
 .content {
@@ -19,6 +19,9 @@
     align-items: center;
     flex-direction: column;
     margin: 10px;
+    border: 2px solid #1F4214;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .product_img_container {
@@ -32,9 +35,24 @@
 }
 
 .product_price,
-.product_article {
+.product_article,
+.product_link {
     width: 100%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
     text-align: center;
-    background-color: darkgray;
+    letter-spacing: 0.1em;
+    color: black;
+    background-color: #FFE7E7;
+    border-top: 1px solid #1F4214;
+    padding: 5px 0;
+}
+
+.product_link {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 0;
 }
 
