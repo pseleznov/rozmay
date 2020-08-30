@@ -4,6 +4,19 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
     z-index: 1;
     margin-top: 60px;
+}
+
+.asoortment_kvitochka_bg {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translate(50%, -50%) scale(3);
+}
+
+.asoortment_kvitochka_bg svg path {
+    fill: #1F4214;
+    opacity: 0.1;
 }

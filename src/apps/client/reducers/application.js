@@ -1,17 +1,18 @@
 import {
-    SET_PRODUCTS
+    TOGGLE_POPUP_PRODUCT
 } from '../types/types';
 
 import data from '../../../seeds/data';
 
 const initialState = {
-    products: data
+    products: data,
+    isPopupProductShown: false
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
-    case SET_PRODUCTS:
-        return { ...state, products: action.payload };
+    case TOGGLE_POPUP_PRODUCT:
+        return { ...state, isPopupProductShown: action.payload };
     default:
         return state;
     }
