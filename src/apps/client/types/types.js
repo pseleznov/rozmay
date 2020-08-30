@@ -1,2 +1,3 @@
-export const 
+export const
+    SET_LANG = 'SET_LANG',
     TOGGLE_POPUP_PRODUCT = 'TOGGLE_POPUP_PRODUCT';
