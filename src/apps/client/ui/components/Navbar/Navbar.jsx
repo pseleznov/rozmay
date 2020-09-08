@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 import styles from './Navbar.module.css'
-import { Component } from 'react';
 
 const navbar = [
     { title: 'Чоловічі сорочки', link: '/products/men-shirt' },
@@ -33,6 +32,9 @@ const navbar = [
     { title: 'Дрібнички і не тільки', link: '/products/trifles' }
 ];
 
+const CATALOG_HEIGHT = 587;
+const FOOTER_HEIGHT = 150;
+
 class Navbar extends Component {
 
     state = {}
@@ -44,10 +46,14 @@ class Navbar extends Component {
     }
 
     render() {
-
+        const { fixPosition, windowHeight } = this.props;
         return (
             <div className={styles.navbarContainer}>
-                <div className={styles.contentContainer}>
+                <div
+                    className={classNames(styles.contentContainer, {
+                        [styles.fixPosition]: fixPosition && windowHeight >= CATALOG_HEIGHT + FOOTER_HEIGHT
+                    })}
+                >
                     <div className={styles.title}>КАТАЛОГ</div>
                     <div className={styles.navbarItems}>
                         {
