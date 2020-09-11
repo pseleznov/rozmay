@@ -5,7 +5,11 @@ const data = [
             {
                 id: 1,
                 price: 'від 100 грн',
-                photo: ['https://i.imgur.com/A7PTQVH.jpg']
+                photo: [
+                    'https://i.imgur.com/A7PTQVH.jpg',
+                    'https://i.imgur.com/zXoxniz.jpg',
+                    'https://i.imgur.com/jXuJl3B.jpg'
+                ]
             },
             {
                 id: 2,
