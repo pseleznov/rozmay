@@ -21,4 +21,28 @@
     src: url('./font/Raleway-Bold.ttf') format('truetype');
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('./font/Montserrat-Regular.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'MontserratMedium';
+    src: url('./font/Montserrat-Medium.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'MontserratLight';
+    src: url('./font/Montserrat-Light.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'MontserratBold';
+    src: url('./font/Montserrat-Bold.ttf') format('truetype');
+    font-display: swap;
+  }
   
