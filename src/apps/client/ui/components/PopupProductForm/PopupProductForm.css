@@ -115,5 +115,25 @@
 
 .popupProductFormContainer_content_infoWrap {
     width: 50%;
+    height: 100%;
+    padding: 60px;
+}
+
+.popupProductFormContainer_content_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.popupProductFormContainer_content_infoMateriales,
+.popupProductFormContainer_content_infoPrice,
+.popupProductFormContainer_content_infoArticle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 

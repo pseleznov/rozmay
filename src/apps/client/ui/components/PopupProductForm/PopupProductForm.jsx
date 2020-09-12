@@ -63,7 +63,7 @@ class PopupProductForm extends Component {
                             <div 
                                 className={classNames(
                                     'popupProductFormContainer_content_leftArrow', {
-                                    ['popupProductFormContainer_content_invisibleArrow']: invisible
+                                    'popupProductFormContainer_content_invisibleArrow': invisible
                                 })}
                                 onClick={this.handleArrowClick('left')}
                             >
@@ -91,7 +91,7 @@ class PopupProductForm extends Component {
                             <div 
                                 className={classNames(
                                     'popupProductFormContainer_content_rightArrow', {
-                                    ['popupProductFormContainer_content_invisibleArrow']: invisible
+                                    'popupProductFormContainer_content_invisibleArrow': invisible
                                 })}
                                 onClick={this.handleArrowClick('right')}
                             >
@@ -102,8 +102,33 @@ class PopupProductForm extends Component {
                                 />
                             </div>
                         </div>
-                        <div className='popupProductFormContainer_content_infoWrap' ref={this.slider}>
-                                kek
+                        <div className='popupProductFormContainer_content_infoWrap'>
+                            <div className='popupProductFormContainer_content_info'>
+                                <div className='popupProductFormContainer_content_infoMateriales'>
+                                    <div className='popupProductFormContainer_content_name'>
+                                        тканини
+                                    </div>
+                                    <div className='popupProductFormContainer_content_value'>
+                                        міх, льон, сілк
+                                    </div>
+                                </div>
+                                <div className='popupProductFormContainer_content_infoPrice'>
+                                    <div className='popupProductFormContainer_content_name'>
+                                        ціна
+                                    </div>
+                                    <div className='popupProductFormContainer_content_value'>
+                                        {activeProduct.price}
+                                    </div>
+                                </div>
+                                <div className='popupProductFormContainer_content_infoArticle'>
+                                    <div className='popupProductFormContainer_content_name'>
+                                        код товару
+                                    </div>
+                                    <div className='popupProductFormContainer_content_value'>
+                                        {activeProduct.article}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
