@@ -1,14 +1,10 @@
 import React from 'react';
-import classNames from 'classnames'
 
 import './ProductDescription.css';
 
 const ProductDescription = (props) => {
     return (
-        <div className={classNames(
-            'productDescriptionContainer', {
-            'productDescriptionContainer_right': props.position % 2
-        })}>
+        <div className='productDescriptionContainer'>
             <div className='productDescription_title'>
                 {props.title}
             </div>

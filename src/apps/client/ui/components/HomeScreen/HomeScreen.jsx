@@ -1,5 +1,5 @@
 import React from 'react';
-import flower from './img/kvitochka.png';
+import FlowerDivider from '../FlowerDivider/FlowerDivider';
 
 import './HomeScreen.css';
 
@@ -12,19 +12,7 @@ const HomeScreen = () => {
                     безперечно, <span className='accent green'>всім</span> – 
                     це наша <span className='accent red'>українська вишиванка</span>.
                 </div>
-                <div className='homescreenContent_divider'>
-                    <div className='homescreenContent_flowersBox'>
-                        <div className='homescreenContent_flowerWrap'>
-                            <img src={flower} alt="flower"/>
-                        </div>
-                        <div className='homescreenContent_flowerWrap'>
-                            <img src={flower} alt="flower"/>
-                        </div>
-                        <div className='homescreenContent_flowerWrap'>
-                            <img src={flower} alt="flower"/>
-                        </div>
-                    </div>
-                </div>
+               <FlowerDivider />
                 <div className='homescreenContent_textBlock'>
                     <div className='homescreenContent_text'>
                         Ошатна і щоразу неповторна, вона є ледь не в кожного українця.
