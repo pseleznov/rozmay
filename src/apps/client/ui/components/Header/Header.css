@@ -91,6 +91,10 @@
     letter-spacing: 0.1em;
 }
 
+.activeLang {
+    text-decoration: underline;
+}
+
 #kvitochka {
     animation: rotate 5s linear infinite;
     transform-origin: center;

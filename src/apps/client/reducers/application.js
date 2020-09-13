@@ -10,7 +10,8 @@ import DEFAULT_LANG from '../constant/constant'
 const initialState = {
     products: data,
     isPopupProductShown: false,
-    langMap: langMap[DEFAULT_LANG]
+    langMap: langMap[DEFAULT_LANG],
+    lang: DEFAULT_LANG
 };
 
 export default function (state = initialState, action) {
@@ -18,7 +19,11 @@ export default function (state = initialState, action) {
         case TOGGLE_POPUP_PRODUCT:
             return { ...state, isPopupProductShown: action.payload };
         case SET_LANG:
-            return { ...state, langMap: langMap[action.payload] };
+            return { 
+                ...state, 
+                langMap: langMap[action.payload],
+                lang: action.payload
+            };
         default:
             return state;
     }

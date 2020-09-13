@@ -3,11 +3,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import headerBg from './img/header.png';
 import setLang from '../../../actions/setLang';
+import classNames from 'classnames';
 
 import './Header.css';
 
 const Header = () => {
     const langMap = useSelector(({ application }) => application.langMap);
+    const lang = useSelector(({ application }) => application.lang);
     const { main, about } = langMap.header.menu;
     const dispatch = useDispatch();
 
@@ -81,8 +83,22 @@ const Header = () => {
                         </NavLink>
                     </div>
                     <div className='headerTop_langs'>
-                        <div className='lang' onClick={() => dispatch(setLang('ua'))}>укр</div>
-                        <div className='lang' onClick={() => dispatch(setLang('ru'))}>рус</div>
+                        <div 
+                            className={classNames('lang', {
+                                'activeLang': lang === 'ua'
+                            })} 
+                            onClick={() => dispatch(setLang('ua'))}
+                        >
+                            укр
+                        </div>
+                        <div
+                            className={classNames('lang', {
+                                'activeLang': lang === 'ru'
+                            })} 
+                            onClick={() => dispatch(setLang('ru'))}
+                        >
+                            рус
+                        </div>
                     </div>
                 </div>
             </div>
