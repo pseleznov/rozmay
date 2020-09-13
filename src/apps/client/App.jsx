@@ -36,7 +36,7 @@ class App extends Component {
 
   handleScroll = () => {
       const { arrowVisible } = this.state;
-      if (document.documentElement.scrollTop > 0 !== arrowVisible) {
+      if ((document.documentElement.scrollTop > 0) !== arrowVisible) {
           if (document.documentElement.scrollTop) {
               this.setState({ arrowVisible: true });
           } else {
@@ -56,7 +56,7 @@ class App extends Component {
           <Header />
           <div className="pageContent">
             <Switch>
-              <Route exact path={`/`} render={props => <MainPageContainer {...props} />} />
+              <Route exact path={`/`} render={props => <MainPageContainer {...props} homeScreen={true} />} />
               <Route exact path={`/products/:section?`} render={props => <MainPageContainer {...props} />} />
               <Route exact path={`/about`} render={props => <AboutPage />} />
               <Route path={`/`} render={props => <NotFoundPage />} />
