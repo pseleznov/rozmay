@@ -94,6 +94,20 @@
 .subItem {
     width: 100%;
     padding: 13px 0;
+    position: relative;
+}
+
+.subItem::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #9E0707;
 }
 
 .disable {
