@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
+import arrow from './img/arrow.png';
 
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
 
 const navbar = [
     { title: 'Чоловічі сорочки', link: '/products/men-shirt' },
@@ -62,7 +63,16 @@ class Navbar extends Component {
                                     return (
                                         <div className={classNames(styles.navbarItem, styles.group)} key={i}>
                                             <div className={styles.groupTitle} onClick={this.handleClick(item.name)}>
-                                                {item.name}
+                                                <span>{item.name}</span>
+                                                <div className={styles.groupArrow}>
+                                                    <img
+                                                        className={classNames({
+                                                            [styles.arrowUp]: !this.state[item.name]
+                                                        })} 
+                                                        src={arrow} 
+                                                        alt="arrow"
+                                                    />
+                                                </div> 
                                             </div>
                                             <div className={classNames(styles.itemContent, {
                                                 [styles.disable]: !this.state[item.name]
