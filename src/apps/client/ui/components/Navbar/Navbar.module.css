@@ -1,6 +1,8 @@
 .navbarContainer {
     width: 380px;
     height: 100%;
+    display: flex;
+    align-items: flex-start;
 }
 
 .contentContainer {
@@ -11,12 +13,6 @@
     flex-direction: column;
     font-family: Montserrat;
     padding-left: 50px;
-}
-
-.fixPosition {
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .title {

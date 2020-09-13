@@ -33,9 +33,6 @@ const navbar = [
     { title: 'Дрібнички і не тільки', link: '/products/trifles' }
 ];
 
-const CATALOG_HEIGHT = 587;
-const FOOTER_HEIGHT = 150;
-
 class Navbar extends Component {
 
     state = {}
@@ -47,14 +44,9 @@ class Navbar extends Component {
     }
 
     render() {
-        const { fixPosition, windowHeight } = this.props;
         return (
             <div className={styles.navbarContainer}>
-                <div
-                    className={classNames(styles.contentContainer, {
-                        [styles.fixPosition]: fixPosition && windowHeight >= CATALOG_HEIGHT + FOOTER_HEIGHT
-                    })}
-                >
+                <div className={styles.contentContainer}>
                     <div className={styles.title}>КАТАЛОГ</div>
                     <div className={styles.navbarItems}>
                         {
@@ -67,7 +59,7 @@ class Navbar extends Component {
                                                 <div className={styles.groupArrow}>
                                                     <img
                                                         className={classNames({
-                                                            [styles.arrowUp]: !this.state[item.name]
+                                                            [styles.arrowUp]: this.state[item.name]
                                                         })} 
                                                         src={arrow} 
                                                         alt="arrow"
