@@ -43,6 +43,7 @@
     align-items: center;
     position: relative;
     font-size: 0;
+    animation: flowOut 2s ease;
 }
 
 .homescreenContent_divider::before {
@@ -102,4 +103,14 @@
     letter-spacing: 0.06em;
     color: #1F4214;
     margin-bottom: 10px;
+}
+
+@keyframes flowOut {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
