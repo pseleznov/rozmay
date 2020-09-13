@@ -1,0 +1,43 @@
+.bannerWrap {
+    width: 100%;
+    padding: 150px 0 110px;
+}
+
+.bannerContent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerPhoneWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 960px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #9E0707;
+    margin-bottom: 20px;
+}
+
+.bannerText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #9E0707;
+    max-width: 573px;
+}
