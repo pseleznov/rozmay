@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FLowerDivider from '../../components/FlowerDivider/FlowerDivider';
 import AssortmentContainer from '../../containers/AssortmentContainer/AssortmentContainer';
+import Banner from '../../components/Banner/Banner';
 import background from './img/shveina_car.png';
 
 import './AboutPage.css';
@@ -30,7 +31,7 @@ class AboutPage extends Component {
                     </div>
                 </div>
                 <AssortmentContainer />
-                <div className='aboutPage_anchor' ref={this.anchor}></div>
+                <Banner />
             </section>
         );
     }
