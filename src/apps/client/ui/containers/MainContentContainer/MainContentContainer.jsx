@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { useSelector, useDispatch } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import togglePopupProduct from '../../../actions/togglePopupProduct';
@@ -13,14 +14,18 @@ const MainContentContainer = ({ match }) => {
     const togglePopup = (payload) => {
         dispatch(togglePopupProduct(payload))
     }
-
     const filteredProducts = productsFilter(addArticles(products), match.params);
+
+    const isBigDesktop = useMediaQuery({
+        query: '(min-device-width: 1400px)'
+    });
 
     return (
         <MainContent 
             products={filteredProducts.value} 
             isPopupProductShown={isPopupProductShown} 
             togglePopup={togglePopup}
+            isBigDesktop={isBigDesktop}
         />
     );
 }
