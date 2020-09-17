@@ -45,10 +45,23 @@
 .navbarItem a {
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
-.navbarItem a.active {
-    text-decoration: underline;
+.navbarItem a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #9E0707;
+    transition: all .3s ease;
+}
+
+.navbarItem a.active::after {
+    width: 100%;
 }
 
 .groupTitle {
@@ -95,6 +108,10 @@
     width: 100%;
     padding: 13px 0;
     position: relative;
+}
+
+.subItem a::after {
+    background: #1F4214;
 }
 
 .subItem::before {

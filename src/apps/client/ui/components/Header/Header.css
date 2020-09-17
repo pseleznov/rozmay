@@ -79,8 +79,24 @@
     letter-spacing: 0.15em;
 }
 
+.link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #9E0707;
+    transition: all .3s ease;
+}
+
 .active {
-    text-decoration: underline;
+    position: relative;
+}
+
+.active::after {
+    width: 100%;
 }
 
 .lang {
@@ -92,10 +108,23 @@
     text-transform: uppercase;
     cursor: pointer;
     letter-spacing: 0.1em;
+    position: relative;
 }
 
-.activeLang {
-    text-decoration: underline;
+.lang::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #1F4214;
+    transition: all .3s ease;
+}
+
+.activeLang::after {
+    width: 100%;
 }
 
 #kvitochka {
