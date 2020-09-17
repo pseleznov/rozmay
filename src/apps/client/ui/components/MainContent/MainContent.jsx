@@ -29,7 +29,8 @@ class MainContent extends Component {
     divideIntoTwo = (products) => {
         const newProductsArray = [];
         for (let i = 0; i < products.length; i = i + 2) {
-            newProductsArray.push([products[i], products[i + 1]]);
+            const tempArray = products.slice(i, i + 2);
+            newProductsArray.push(tempArray);
         }
         return newProductsArray;
     }
@@ -37,7 +38,8 @@ class MainContent extends Component {
     divideIntoThree = (products) => {
         const newProductsArray = [];
         for (let i = 0; i < products.length; i = i + 3) {
-            newProductsArray.push([products[i], products[i + 1], products[i + 2]]);
+            const tempArray = products.slice(i, i + 3);
+            newProductsArray.push(tempArray);
         }
         return newProductsArray;
     }
@@ -90,7 +92,7 @@ class MainContent extends Component {
                                 <div className='productsRow' key={i}>
                                     <FlowerDivider />
                                     <div className={classNames('products_container', {
-                                        'products_container_lastLine': productRow.includes(undefined)
+                                        'products_container_lastLine': productRow.length < 3
                                     })}>
                                         {this.createProductContainer(productRow)}
                                     </div>
