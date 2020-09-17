@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import leftArrow from './img/leftArrow.png';
 import rightArrow from './img/rightArrow.png';
+import flower from '../FlowerDivider/img/kvitochka.png';
+import cross from './img/cross.png';
 
 import './PopupProductForm.css';
 
@@ -16,7 +18,9 @@ class PopupProductForm extends Component {
 
     state = {
         position: 0,
-        photos: this.props.activeProduct.photo.length
+        photos: this.props.activeProduct.photo.length,
+        leftArrowVisible: false,
+        rightArrowVisible: true
     }
 
     handleArrowClick = (direction) => () => {
@@ -28,6 +32,9 @@ class PopupProductForm extends Component {
             let offset = position + step;
             offset = Math.min(offset, 0);
             gallery.style.marginLeft = `${offset}px`;
+            const index = - offset / step;
+            this.checkArrowsVisibility(index);
+
             this.setState({
                 position: offset
             });
@@ -37,14 +44,39 @@ class PopupProductForm extends Component {
             let offset = position - step;
             offset = Math.max(offset, - step * (photos - 1));
             gallery.style.marginLeft = `${offset}px`;
+            const index = - offset / step;
+            this.checkArrowsVisibility(index);
+
             this.setState({
                 position: offset
             });
         }
     }
 
+    checkArrowsVisibility = index => {
+        this.checkLeftArrowVisibility(index);
+        this.checkRightArrowVisibility(index);
+    }
+
+    checkLeftArrowVisibility = index => {
+        this.setState({
+            leftArrowVisible: index !== 0
+        });
+    }
+
+    checkRightArrowVisibility = index => {
+        this.setState({
+            rightArrowVisible: index !== this.state.photos - 1
+        });
+    }
+
+    onOrderClick = (activeProduct) => () => {
+        this.props.handleOrderClick(activeProduct)();
+    }
+
     render() {
         const { togglePopup, activeProduct } = this.props;
+        const { leftArrowVisible, rightArrowVisible } = this.state;
         const invisible = activeProduct.photo.length === 1;
 
         return (
@@ -52,18 +84,20 @@ class PopupProductForm extends Component {
                 <div
                     className='popupProductFormContainer_background'
                     onClick={() => togglePopup(false)}
-                ></div>
+                />
                 <div className='popupProductFormContainer_contentWrap'>
-                    <svg id="cross" onClick={() => togglePopup(false)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 234" fill="none" stroke="red" strokeWidth="20px">
-                        <line className="cls-1" x1="43.5" y1="36" x2="205.5" y2="198" />
-                        <line className="cls-1" x1="205.5" y1="36" x2="43.5" y2="198" />
-                    </svg>
+                    <div className='popupProductForm_cross' onClick={() => togglePopup(false)}>
+                        <img src={cross} alt="cross"/>
+                    </div>
+                    <div className='popupProductForm_orderButton' onClick={this.onOrderClick(activeProduct)}>
+                        Замовити
+                    </div>
                     <div className='popupProductFormContainer_content'>
                         <div className='popupProductFormContainer_content_slider' ref={this.slider}>
                             <div 
                                 className={classNames(
                                     'popupProductFormContainer_content_leftArrow', {
-                                    'popupProductFormContainer_content_invisibleArrow': invisible
+                                    'popupProductFormContainer_content_invisibleArrow': invisible || !leftArrowVisible
                                 })}
                                 onClick={this.handleArrowClick('left')}
                             >
@@ -91,7 +125,7 @@ class PopupProductForm extends Component {
                             <div 
                                 className={classNames(
                                     'popupProductFormContainer_content_rightArrow', {
-                                    'popupProductFormContainer_content_invisibleArrow': invisible
+                                    'popupProductFormContainer_content_invisibleArrow': invisible || !rightArrowVisible
                                 })}
                                 onClick={this.handleArrowClick('right')}
                             >
@@ -102,6 +136,19 @@ class PopupProductForm extends Component {
                                 />
                             </div>
                         </div>
+                        <div className='popupProductForm_divider'>
+                            <div className='popupProductForm_flowersBox'>
+                                <div className='popupProductForm_flowerWrap'>
+                                    <img src={flower} alt="flower"/>
+                                </div>
+                                <div className='popupProductForm_flowerWrap'>
+                                    <img src={flower} alt="flower"/>
+                                </div>
+                                <div className='popupProductForm_flowerWrap'>
+                                    <img src={flower} alt="flower"/>
+                                </div>
+                            </div>
+                        </div>
                         <div className='popupProductFormContainer_content_infoWrap'>
                             <div className='popupProductFormContainer_content_info'>
                                 <div className='popupProductFormContainer_content_infoMateriales'>
@@ -109,7 +156,7 @@ class PopupProductForm extends Component {
                                         тканини
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
-                                        міх, льон, сілк
+                                        льон
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoPrice'>
@@ -117,7 +164,7 @@ class PopupProductForm extends Component {
                                         ціна
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
-                                        {activeProduct.price}
+                                        від {activeProduct.price} UAH
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoArticle'>

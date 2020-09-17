@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Banner from '../../components/Banner/Banner';
 import HomeScreen from '../../components/HomeScreen/HomeScreen';
 import Navbar from '../../components/Navbar/Navbar';
+import BannerContainer from '../../containers/BannerContainer/BannerContainer';
 import MainContentContainer from '../../containers/MainContentContainer/MainContentContainer';
 
 import './MainPage.css';
@@ -19,7 +19,7 @@ class MainPage extends Component {
                             : <MainContentContainer />
                     }
                 </div>
-                <Banner />
+                <BannerContainer />
             </div>
         );
     }

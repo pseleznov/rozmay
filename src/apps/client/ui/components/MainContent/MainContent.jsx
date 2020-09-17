@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import classNames from 'classnames';
 import FlowerDivider from '../FlowerDivider/FlowerDivider';
 import PopupProductForm from '../PopupProductForm/PopupProductForm';
+import setActiveProduct from '../../../actions/setActiveProduct';
 
 import './MainContent.css';
 
@@ -19,6 +21,7 @@ class MainContent extends Component {
 
     handleOrderClick = (activeProduct) => () => {
         this.props.togglePopup(false);
+        this.props.setActiveProduct(activeProduct);
         window.scrollTo({
             top: document.body.scrollHeight,
             left: 0,
@@ -45,7 +48,7 @@ class MainContent extends Component {
     }
 
     createProductContainer = (productRow) => {
-        return productRow.filter(Boolean).map((product, i) => {
+        return productRow.map((product, i) => {
             return (
                 <div className='product' key={i}>
                     <div className='product_img_container'>
@@ -83,7 +86,12 @@ class MainContent extends Component {
         return (
             <div className='contentContainer'>
                 {
-                    isPopupProductShown && <PopupProductForm togglePopup={togglePopup} activeProduct={activeProduct} />
+                    isPopupProductShown && 
+                        <PopupProductForm 
+                            togglePopup={togglePopup}
+                            handleOrderClick={this.handleOrderClick}
+                            activeProduct={activeProduct} 
+                        />
                 }
                 <div className='content'>
                     {
@@ -106,4 +114,4 @@ class MainContent extends Component {
     }
 };
 
-export default MainContent;
+export default connect(null, { setActiveProduct })(MainContent);
