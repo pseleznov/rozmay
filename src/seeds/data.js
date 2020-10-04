@@ -218,152 +218,126 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 300,
+                price: 2100,
                 photo: ['https://i.imgur.com/tlMwVSJ.jpg']
             },
             {
                 id: 2,
-                price: 300,
-                photo: ['https://i.imgur.com/ydVL0GW.jpg']
+                price: 1500,
+                photo: [
+                    'https://i.imgur.com/ydVL0GW.jpg',
+                    'https://i.imgur.com/IoOnr8C.jpg'
+                ]
             },
             {
                 id: 3,
-                price: 300,
-                photo: ['https://i.imgur.com/VAGFbHr.jpg']
+                price: 1500,
+                photo: [
+                    'https://i.imgur.com/VAGFbHr.jpg',
+                    'https://i.imgur.com/xdOOU4Z.jpg',
+                    'https://i.imgur.com/Wo44L4R.jpg'
+                ]
             },
             {
                 id: 4,
-                price: 300,
-                photo: ['https://i.imgur.com/h3uCmhH.jpg']
+                price: 1300,
+                photo: [
+                    'https://i.imgur.com/h3uCmhH.jpg',
+                    'https://i.imgur.com/Ov0S08O.jpg',
+                    'https://i.imgur.com/EABRdmu.jpg'
+                ]
             },
             {
                 id: 5,
-                price: 300,
+                price: 1600,
                 photo: ['https://i.imgur.com/Srrbotj.jpg']
             },
             {
                 id: 6,
-                price: 300,
+                price: 1800,
                 photo: ['https://i.imgur.com/cvzWbE7.jpg']
             },
             {
                 id: 7,
-                price: 300,
-                photo: ['https://i.imgur.com/Wo44L4R.jpg']
-            },
-            {
-                id: 8,
-                price: 300,
+                price: 1600,
                 photo: ['https://i.imgur.com/Nau6lTp.jpg']
             },
             {
-                id: 9,
-                price: 300,
+                id: 8,
+                price: 1700,
                 photo: ['https://i.imgur.com/boADd3Z.jpg']
             },
             {
-                id: 10,
-                price: 300,
+                id: 9,
+                price: 2100,
                 photo: ['https://i.imgur.com/SG3YrKv.jpg']
             },
             {
-                id: 11,
-                price: 300,
-                photo: ['https://i.imgur.com/eM87BZT.jpg']
+                id: 10,
+                price: 1300,
+                photo: [
+                    'https://i.imgur.com/eM87BZT.jpg',
+                    'https://i.imgur.com/Spb6d0z.jpg'
+                ]
             },
             {
-                id: 12,
-                price: 300,
+                id: 11,
+                price: 1500,
                 photo: ['https://i.imgur.com/4AMpFyb.jpg']
             },
             {
-                id: 13,
-                price: 300,
+                id: 12,
+                price: 1500,
                 photo: ['https://i.imgur.com/MuwHYS2.jpg']
             },
             {
-                id: 14,
-                price: 300,
-                photo: ['https://i.imgur.com/Ov0S08O.jpg']
-            },
-            {
-                id: 15,
-                price: 300,
-                photo: ['https://i.imgur.com/Spb6d0z.jpg']
-            },
-            {
-                id: 16,
-                price: 300,
-                photo: ['https://i.imgur.com/EABRdmu.jpg']
-            },
-            {
-                id: 17,
-                price: 300,
+                id: 13,
+                price: 850,
                 photo: ['https://i.imgur.com/1kdRL0R.jpg']
             },
             {
-                id: 18,
-                price: 300,
-                photo: ['https://i.imgur.com/JoFJdss.jpg']
-            },
-            {
-                id: 19,
-                price: 300,
+                id: 14,
+                price: 1300,
                 photo: ['https://i.imgur.com/IKBPh6y.jpg']
             },
             {
-                id: 20,
-                price: 300,
+                id: 15,
+                price: 1700,
                 photo: ['https://i.imgur.com/9an71bj.jpg']
             },
             {
-                id: 21,
-                price: 300,
+                id: 16,
+                price: 950,
                 photo: ['https://i.imgur.com/qLTWhxi.jpg']
             },
             {
-                id: 22,
-                price: 300,
+                id: 17,
+                price: 1600,
                 photo: ['https://i.imgur.com/F1Ff32e.jpg']
             },
             {
-                id: 23,
-                price: 300,
-                photo: ['https://i.imgur.com/IoOnr8C.jpg']
-            },
-            {
-                id: 24,
-                price: 300,
-                photo: ['https://i.imgur.com/s2m01Aw.jpg']
-            },
-            {
-                id: 25,
-                price: 300,
-                photo: ['https://i.imgur.com/xdOOU4Z.jpg']
-            },
-            {
-                id: 26,
-                price: 300,
+                id: 18,
+                price: 1600,
                 photo: ['https://i.imgur.com/glmzho4.jpg']
             },
             {
-                id: 27,
-                price: 300,
+                id: 19,
+                price: 1500,
                 photo: ['https://i.imgur.com/UmQDu9p.jpg']
             },
             {
-                id: 28,
-                price: 300,
+                id: 20,
+                price: 3000,
                 photo: ['https://i.imgur.com/cVnm5EJ.jpg']
             },
             {
-                id: 29,
-                price: 300,
+                id: 21,
+                price: 900,
                 photo: ['https://i.imgur.com/TPsYzhc.jpg']
             },
             {
-                id: 30,
-                price: 300,
+                id: 22,
+                price: 1500,
                 photo: ['https://i.imgur.com/GVvCLse.jpg']
             }
         ]
@@ -373,23 +347,17 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 500,
-                photo: ['https://i.imgur.com/7fimDBY.jpg']
+                price: 1500,
+                photo: [
+                    'https://i.imgur.com/7fimDBY.jpg',
+                    'https://i.imgur.com/zh7YTPu.jpg',
+                    'https://i.imgur.com/fG8uOAZ.jpg'
+                ]
             },
             {
                 id: 2,
-                price: 500,
+                price: 2400,
                 photo: ['https://i.imgur.com/Ncre7Ps.jpg']
-            },
-            {
-                id: 3,
-                price: 500,
-                photo: ['https://i.imgur.com/zh7YTPu.jpg']
-            },
-            {
-                id: 4,
-                price: 500,
-                photo: ['https://i.imgur.com/fG8uOAZ.jpg']
             }
         ]
     },
@@ -455,7 +423,12 @@ const data = [
                 id:7,
                 price: 500,
                 photo: ['https://i.imgur.com/fULqOrI.jpg']
-            }
+            },
+            {
+                id: 8,
+                price: 480,
+                photo: ['https://i.imgur.com/s2m01Aw.jpg']
+            },
         ]
     },
     {
