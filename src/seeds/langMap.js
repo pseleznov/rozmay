@@ -103,6 +103,18 @@ export default {
                 pricePrev: 'від',
                 article: 'артикул',
                 button: 'Детальніше'
+            },
+            homeScreen: {
+                title:
+                    <span>Одяг який <span className='accent green'>личить</span>, 
+                        безперечно, <span className='accent green'>всім</span> – 
+                        це наша <span className='accent red'>українська вишиванка</span>.
+                    </span>,
+                text: [
+                    'Ошатна і щоразу неповторна, вона є ледь не в кожного українця.',
+                    'Це чудовий подарунок друзям, родичам і діловим партнерам.',
+                    'Це національний здобуток, яким ми пишаємось і з радістю ділимось з усім світом.'
+                ]
             }
         },
         aboutPage: {
@@ -214,6 +226,18 @@ export default {
                 pricePrev: 'від',
                 article: 'артикул',
                 button: 'Детальніше'
+            },
+            homeScreen: {
+                title:
+                    <span>Одежда которая <span className='accent green'>подходит</span>, 
+                        бесспорно, <span className='accent green'>всем</span> – 
+                        это наша <span className='accent red'>украинская вышиванка</span>.
+                    </span>,
+                text: [
+                    'Нарядная и каждый раз неповторимая, она есть едва ли не у каждого украинца.',
+                    'Это отличный подарок друзьям, родственникам и деловым партнерам.',
+                    'Это национальное достояние, которым мы гордимся и с радостью делимся со всем миром.'
+                ]
             }
         },
         aboutPage: {
