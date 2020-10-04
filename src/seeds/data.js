@@ -708,87 +708,69 @@ const data = [
         value: [            
             {
                 id: 1,
-                price: 400,
-                photo: ['https://i.imgur.com/cOYGcEe.jpg']
+                price: 650,
+                photo: [
+                    'https://i.imgur.com/HPASNWL.jpg',
+                    'https://i.imgur.com/cOYGcEe.jpg',
+                    'https://i.imgur.com/A1d7E9f.jpg'
+                ]
             },
             {
                 id: 2,
-                price: 400,
-                photo: ['https://i.imgur.com/cVL02Wi.jpg']
+                price: 650,
+                photo: [
+                    'https://i.imgur.com/AYF4EwT.jpg',
+                    'https://i.imgur.com/cVL02Wi.jpg',
+                    'https://i.imgur.com/oE6ogGT.jpg'
+                ]
             },
             {
                 id: 3,
-                price: 400,
-                photo: ['https://i.imgur.com/AYF4EwT.jpg']
+                price: 650,
+                photo: [
+                    'https://i.imgur.com/20UGBo0.jpg',
+                    'https://i.imgur.com/UgiF3r1.jpg'
+                ]
             },
             {
                 id: 4,
-                price: 400,
-                photo: ['https://i.imgur.com/A1d7E9f.jpg']
-            },
-            {
-                id: 5,
-                price: 400,
-                photo: ['https://i.imgur.com/oE6ogGT.jpg']
-            },
-            {
-                id: 6,
-                price: 400,
-                photo: ['https://i.imgur.com/20UGBo0.jpg']
-            },
-            {
-                id: 7,
-                price: 400,
-                photo: ['https://i.imgur.com/HPASNWL.jpg']
-            },
-            {
-                id: 8,
-                price: 400,
-                photo: ['https://i.imgur.com/UgiF3r1.jpg']
-            },
-            {
-                id: 9,
-                price: 400,
+                price: 650,
                 photo: ['https://i.imgur.com/SEdYZoh.jpg']
             },
             {
-                id: 10,
-                price: 400,
+                id: 5,
+                price: 650,
                 photo: ['https://i.imgur.com/ZU0RZhO.jpg']
             },
             {
-                id: 11,
-                price: 400,
+                id: 6,
+                price: 650,
                 photo: ['https://i.imgur.com/eN4wLyZ.jpg']
             },
             {
-                id: 12,
-                price: 400,
+                id: 7,
+                price: 650,
                 photo: ['https://i.imgur.com/jWMH5MG.jpg']
             },
             {
-                id: 13,
-                price: 400,
-                photo: ['https://i.imgur.com/yGzUWnI.jpg']
+                id: 8,
+                price: 900,
+                photo: [
+                    'https://i.imgur.com/yGzUWnI.jpg',
+                    'https://i.imgur.com/9Wa2uTe.jpg'
+                ]
             },
             {
-                id: 14,
-                price: 400,
-                photo: ['https://i.imgur.com/VQGM3Y1.jpg']
+                id: 9,
+                price: 700,
+                photo: [
+                    'https://i.imgur.com/VQGM3Y1.jpg',
+                    'https://i.imgur.com/dcLYQbG.jpg'
+                ]
             },
             {
-                id: 15,
-                price: 400,
-                photo: ['https://i.imgur.com/9Wa2uTe.jpg']
-            },
-            {
-                id: 16,
-                price: 400,
-                photo: ['https://i.imgur.com/dcLYQbG.jpg']
-            },
-            {
-                id: 17,
-                price: 400,
+                id: 10,
+                price: 650,
                 photo: ['https://i.imgur.com/blIF6QP.jpg']
             }
         ]
@@ -798,17 +780,17 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 500,
+                price: 9999,
                 photo: ['https://i.imgur.com/tI7z3wg.jpg']
             },
             {
                 id: 2,
-                price: 500,
+                price: 9999,
                 photo: ['https://i.imgur.com/Mjx7f6A.jpg']
             },
             {
                 id: 3,
-                price: 500,
+                price: 9999,
                 photo: ['https://i.imgur.com/ehFNWAO.jpg']
             }
         ]
