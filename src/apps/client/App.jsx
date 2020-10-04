@@ -58,8 +58,8 @@ class App extends Component {
             <Switch>
               <Route exact path={`/`} render={props => <MainPageContainer {...props} homeScreen={true} />} />
               <Route exact path={`/products/:section?`} render={props => <MainPageContainer {...props} />} />
-              <Route exact path={`/about`} render={props => <AboutPage />} />
-              <Route path={`/`} render={props => <NotFoundPage />} />
+              <Route exact path={`/about`} render={props => <AboutPage {...props} />} />
+              <Route path={`/`} render={props => <NotFoundPage {...props} />} />
             </Switch>
           </div>
           <Footer />
