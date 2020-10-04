@@ -94,125 +94,121 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 200,
+                price: 800,
                 photo: ['https://i.imgur.com/Wy2i7V4.jpg']
             },
             {
                 id: 2,
-                price: 200,
+                price: 650,
                 photo: ['https://i.imgur.com/JxflcVh.jpg']
             },
             {
                 id: 3,
-                price: 200,
+                price: 850,
                 photo: ['https://i.imgur.com/jTb8P2g.jpg']
             },
             {
                 id: 4,
-                price: 200,
-                photo: ['https://i.imgur.com/hSrXYzM.jpg']
+                price: 650,
+                photo: [
+                    'https://i.imgur.com/hSrXYzM.jpg',
+                    'https://i.imgur.com/8HiOh7w.jpg'
+                ]
             },
             {
                 id: 5,
-                price: 200,
+                price: 1100,
                 photo: ['https://i.imgur.com/XPGk2Re.jpg']
             },
             {
                 id: 6,
-                price: 200,
+                price: 550,
                 photo: ['https://i.imgur.com/UTxZSCA.jpg']
             },
             {
                 id: 7,
-                price: 200,
+                price: 650,
                 photo: ['https://i.imgur.com/NdWnCLg.jpg']
             },
             {
                 id: 8,
-                price: 200,
+                price: 500,
                 photo: ['https://i.imgur.com/Tc4akQG.jpg']
             },
             {
                 id: 9,
-                price: 200,
+                price: 850,
                 photo: ['https://i.imgur.com/iCl1aDF.jpg']
             },
             {
                 id: 10,
-                price: 200,
+                price: 680,
                 photo: ['https://i.imgur.com/qKP6jFY.jpg']
             },
             {
                 id: 11,
-                price: 200,
+                price: 850,
                 photo: ['https://i.imgur.com/DW1ONaW.jpg']
             },
             {
                 id: 12,
-                price: 200,
+                price: 650,
                 photo: ['https://i.imgur.com/vFDDRBu.jpg']
             },
             {
                 id: 13,
-                price: 200,
+                price: 700,
                 photo: ['https://i.imgur.com/SDeES7v.jpg']
             },
             {
                 id: 14,
-                price: 200,
+                price: 650,
                 photo: ['https://i.imgur.com/FWCOghH.jpg']
             },
             {
                 id: 15,
-                price: 200,
+                price: 550,
                 photo: ['https://i.imgur.com/Yc8UTdo.jpg']
             },
             {
                 id: 16,
-                price: 200,
-                photo: ['https://i.imgur.com/8HiOh7w.jpg']
-            },
-            {
-                id: 17,
-                price: 200,
+                price: 480,
                 photo: ['https://i.imgur.com/4Hp1ogd.jpg']
             },
             {
+                id: 17,
+                price: 900,
+                photo: [
+                    'https://i.imgur.com/oCzbTuE.jpg',
+                    'https://i.imgur.com/VnLhjJu.jpg'
+                ]
+            },
+            {
                 id: 18,
-                price: 200,
-                photo: ['https://i.imgur.com/oCzbTuE.jpg']
-            },
-            {
-                id: 19,
-                price: 200,
-                photo: ['https://i.imgur.com/VnLhjJu.jpg']
-            },
-            {
-                id: 20,
-                price: 200,
+                price: 750,
                 photo: ['https://i.imgur.com/VlOPMik.jpg']
             },
             {
-                id: 21,
-                price: 200,
+                id: 19,
+                price: 1100,
                 photo: [
                     'https://i.imgur.com/ceBOiM9.jpg',
                     'https://i.imgur.com/iU7thGA.jpg'
                 ]
             },
             {
-                id: 22,
-                price: 200,
+                id: 20,
+                price: 350,
                 photo: ['https://i.imgur.com/lQYblgP.jpg']
             },
             {
-                id: 23,
-                price: 200,
+                id: 21,
+                price: 750,
                 photo: ['https://i.imgur.com/XKA2GjY.jpg']
             },
             {
-                id: 24,
-                price: 200,
+                id: 22,
+                price: 450,
                 photo: ['https://i.imgur.com/frP6s3o.jpg']
             }
         ]
