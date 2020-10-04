@@ -10,7 +10,7 @@ import './Header.css';
 const Header = () => {
     const langMap = useSelector(({ application }) => application.langMap);
     const lang = useSelector(({ application }) => application.lang);
-    const { main, about } = langMap.header.menu;
+    const { menu } = langMap.header;
     const dispatch = useDispatch();
 
     return (
@@ -71,7 +71,7 @@ const Header = () => {
                             className='link'
                             activeClassName='active'
                         >
-                            {main}
+                            {menu.main}
                         </NavLink>
                         <NavLink
                             to={'/about'}
@@ -79,7 +79,7 @@ const Header = () => {
                             className='link'
                             activeClassName='active'
                         >
-                            {about}
+                            {menu.about}
                         </NavLink>
                     </div>
                     <div className='headerTop_langs'>
