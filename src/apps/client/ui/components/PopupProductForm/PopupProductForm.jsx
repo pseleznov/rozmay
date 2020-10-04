@@ -164,7 +164,11 @@ class PopupProductForm extends Component {
                                         ціна
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
-                                        від {activeProduct.price} UAH
+                                        {
+                                            activeProduct.price === 9999
+                                                ? 'ціна договірна'
+                                                : `від ${activeProduct.price} UAH`
+                                        }
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoArticle'>

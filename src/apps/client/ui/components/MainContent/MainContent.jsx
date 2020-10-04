@@ -68,7 +68,13 @@ class MainContent extends Component {
                             Детальніше
                         </div>
                     </div>
-                    <div className='product_price'>від {product.price} UAH</div>
+                    <div className='product_price'>
+                        {
+                            product.price === 9999
+                                ? 'ціна договірна'
+                                : `від ${product.price} UAH`
+                        }
+                    </div>
                     <div className='product_article'>артикул: {product.article}</div>
                 </div>
             );
