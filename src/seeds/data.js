@@ -5,11 +5,7 @@ const data = [
             {
                 id: 1,
                 price: 100,
-                photo: [
-                    'https://i.imgur.com/A7PTQVH.jpg',
-                    'https://i.imgur.com/zXoxniz.jpg',
-                    'https://i.imgur.com/jXuJl3B.jpg'
-                ]
+                photo: ['https://i.imgur.com/A7PTQVH.jpg']
             },
             {
                 id: 2,
@@ -195,6 +191,29 @@ const data = [
                 id: 20,
                 price: 200,
                 photo: ['https://i.imgur.com/VlOPMik.jpg']
+            },
+            {
+                id: 21,
+                price: 200,
+                photo: [
+                    'https://i.imgur.com/ceBOiM9.jpg',
+                    'https://i.imgur.com/iU7thGA.jpg'
+                ]
+            },
+            {
+                id: 22,
+                price: 200,
+                photo: ['https://i.imgur.com/lQYblgP.jpg']
+            },
+            {
+                id: 23,
+                price: 200,
+                photo: ['https://i.imgur.com/XKA2GjY.jpg']
+            },
+            {
+                id: 24,
+                price: 200,
+                photo: ['https://i.imgur.com/frP6s3o.jpg']
             }
         ]
     },
@@ -400,6 +419,21 @@ const data = [
                 id: 4,
                 price: 500,
                 photo: ['https://i.imgur.com/lGb7bOB.jpg']
+            },
+            {
+                id: 5,
+                price: 500,
+                photo: ['https://i.imgur.com/yMjK76R.jpg']
+            },
+            {
+                id: 6,
+                price: 500,
+                photo: ['https://i.imgur.com/gXk9xmr.jpg']
+            },
+            {
+                id:7,
+                price: 500,
+                photo: ['https://i.imgur.com/fULqOrI.jpg']
             }
         ]
     },
@@ -540,7 +574,172 @@ const data = [
                 id: 17,
                 price: 500,
                 photo: ['https://i.imgur.com/FE2Kk7L.jpg']
-            }
+            },
+            {
+                id: 18,
+                price: 500,
+                photo: ['https://i.imgur.com/Z3tbAVf.jpg']
+            },
+            {
+                id: 19,
+                price: 500,
+                photo: ['https://i.imgur.com/ixdfpCA.jpg']
+            },
+            {
+                id: 20,
+                price: 500,
+                photo: ['https://i.imgur.com/Czu5EB5.jpg']
+            },
+            {
+                id: 21,
+                price: 500,
+                photo: ['https://i.imgur.com/t5crjJh.jpg']
+            },
+            {
+                id: 22,
+                price: 500,
+                photo: ['https://i.imgur.com/fht8eAI.jpg']
+            },
+            {
+                id: 23,
+                price: 500,
+                photo: ['https://i.imgur.com/jeWUI0r.jpg']
+            },
+            {
+                id: 24,
+                price: 500,
+                photo: ['https://i.imgur.com/FIwprkN.jpg']
+            },
+            {
+                id: 25,
+                price: 500,
+                photo: ['https://i.imgur.com/ZnaB8qh.jpg']
+            },
+            {
+                id: 26,
+                price: 500,
+                photo: ['https://i.imgur.com/uWH3ZLG.jpg']
+            },
+            {
+                id: 27,
+                price: 500,
+                photo: ['https://i.imgur.com/Xs7V2mY.jpg']
+            },
+            {
+                id: 28,
+                price: 500,
+                photo: ['https://i.imgur.com/b47M5Qn.jpg']
+            },
+            {
+                id: 29,
+                price: 500,
+                photo: ['https://i.imgur.com/k0w0b4G.jpg']
+            },
+            {
+                id: 30,
+                price: 500,
+                photo: ['https://i.imgur.com/XXYsprg.jpg']
+            },
+            {
+                id: 31,
+                price: 500,
+                photo: ['https://i.imgur.com/M8ezOlZ.jpg']
+            },
+            {
+                id: 32,
+                price: 500,
+                photo: ['https://i.imgur.com/mKo34XM.jpg']
+            },
+            {
+                id: 33,
+                price: 500,
+                photo: ['https://i.imgur.com/aeZDCMx.jpg']
+            },
+            {
+                id: 34,
+                price: 500,
+                photo: ['https://i.imgur.com/7E35kIA.jpg']
+            },
+            {
+                id: 35,
+                price: 500,
+                photo: ['https://i.imgur.com/b6zU6qs.jpg']
+            },
+            {
+                id: 36,
+                price: 500,
+                photo: ['https://i.imgur.com/IVPb4dt.jpg']
+            },
+            {
+                id: 37,
+                price: 500,
+                photo: ['https://i.imgur.com/ftXDucL.jpg']
+            },
+            {
+                id: 38,
+                price: 500,
+                photo: ['https://i.imgur.com/GXT3ZI9.jpg']
+            },
+            {
+                id: 39,
+                price: 500,
+                photo: ['https://i.imgur.com/xbaIGxV.jpg']
+            },
+            {
+                id: 40,
+                price: 500,
+                photo: ['https://i.imgur.com/MWBV89a.jpg']
+            },
+            {
+                id: 41,
+                price: 500,
+                photo: ['https://i.imgur.com/aoyrdik.jpg']
+            },
+            {
+                id: 42,
+                price: 500,
+                photo: ['https://i.imgur.com/mpxNyq7.jpg']
+            },
+            {
+                id: 43,
+                price: 500,
+                photo: ['https://i.imgur.com/Hya0zqP.jpg']
+            },
+            {
+                id: 44,
+                price: 500,
+                photo: ['https://i.imgur.com/b9Dp2sn.jpg']
+            },
+            {
+                id: 45,
+                price: 500,
+                photo: ['https://i.imgur.com/XWRtcxo.jpg']
+            },
+            {
+                id: 46,
+                price: 500,
+                photo: ['https://i.imgur.com/cKsKGX3.jpg']
+            },
+            {
+                id: 47,
+                price: 500,
+                photo: ['https://i.imgur.com/D2QF76t.jpg']
+            },
+            {
+                id: 48,
+                price: 500,
+                photo: ['https://i.imgur.com/Zz1i2TN.jpg']
+            },
+            {
+                id: 49,
+                price: 500,
+                photo: ['https://i.imgur.com/A3u6hex.jpg']
+            },
+            {
+                id: 50,
+                price: 500,
+                photo: ['https://i.imgur.com/Vl8Wpa5.jpg']
+            },
         ]
     },
     {
@@ -600,6 +799,36 @@ const data = [
                 id: 11,
                 price: 400,
                 photo: ['https://i.imgur.com/eN4wLyZ.jpg']
+            },
+            {
+                id: 12,
+                price: 400,
+                photo: ['https://i.imgur.com/jWMH5MG.jpg']
+            },
+            {
+                id: 13,
+                price: 400,
+                photo: ['https://i.imgur.com/yGzUWnI.jpg']
+            },
+            {
+                id: 14,
+                price: 400,
+                photo: ['https://i.imgur.com/VQGM3Y1.jpg']
+            },
+            {
+                id: 15,
+                price: 400,
+                photo: ['https://i.imgur.com/9Wa2uTe.jpg']
+            },
+            {
+                id: 16,
+                price: 400,
+                photo: ['https://i.imgur.com/dcLYQbG.jpg']
+            },
+            {
+                id: 17,
+                price: 400,
+                photo: ['https://i.imgur.com/blIF6QP.jpg']
             }
         ]
     },
@@ -610,12 +839,103 @@ const data = [
                 id: 1,
                 price: 500,
                 photo: ['https://i.imgur.com/tI7z3wg.jpg']
+            },
+            {
+                id: 2,
+                price: 500,
+                photo: ['https://i.imgur.com/Mjx7f6A.jpg']
+            },
+            {
+                id: 3,
+                price: 500,
+                photo: ['https://i.imgur.com/ehFNWAO.jpg']
             }
         ]
     },
     {
         productId: 'trifles',
-        value: []
+        value: [
+            {
+                id: 1,
+                price: 500,
+                photo: ['https://i.imgur.com/uGwDxTW.jpg']
+            },
+            {
+                id: 2,
+                price: 500,
+                photo: ['https://i.imgur.com/fErm3aK.jpg']
+            },
+            {
+                id: 3,
+                price: 500,
+                photo: ['https://i.imgur.com/5xierkJ.jpg']
+            },
+            {
+                id: 4,
+                price: 500,
+                photo: ['https://i.imgur.com/orqErEI.jpg']
+            },
+            {
+                id: 5,
+                price: 500,
+                photo: ['https://i.imgur.com/6sUVw12.jpg']
+            },
+            {
+                id: 6,
+                price: 500,
+                photo: ['https://i.imgur.com/SVRoIPU.jpg']
+            },
+            {
+                id: 7,
+                price: 500,
+                photo: ['https://i.imgur.com/mhyyrwC.jpg']
+            },
+            {
+                id: 8,
+                price: 500,
+                photo: ['https://i.imgur.com/Zu1TBV1.jpg']
+            },
+            {
+                id: 9,
+                price: 500,
+                photo: ['https://i.imgur.com/XreGpAQ.jpg']
+            },
+            {
+                id: 10,
+                price: 500,
+                photo: ['https://i.imgur.com/y4gtjAo.jpg']
+            },
+            {
+                id: 11,
+                price: 500,
+                photo: ['https://i.imgur.com/0dnsWrm.jpg']
+            },
+            {
+                id: 12,
+                price: 500,
+                photo: ['https://i.imgur.com/pbpvAb9.jpg']
+            },
+            {
+                id: 13,
+                price: 500,
+                photo: ['https://i.imgur.com/2yPtcVf.jpg']
+            },
+            {
+                id: 14,
+                price: 500,
+                photo: ['https://i.imgur.com/xgDTIJp.jpg']
+            },
+            {
+                id: 15,
+                price: 500,
+                photo: ['https://i.imgur.com/zzwROZ2.jpg']
+            },
+            {
+                id: 16,
+                price: 500,
+                photo: ['https://i.imgur.com/2oBT8TT.jpg']
+            }
+        ]
     }
 ]
 
