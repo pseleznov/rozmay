@@ -9,15 +9,15 @@ export default {
         footer: {
             contacts: {
                 address: {
-                    title: 'Наша адреса',
-                    value: '43017, м.Луцьк ул. Шота Руставелі 8'
+                    title: 'Наша адреса:',
+                    value: '43017, м.Луцьк вул. Шота Руставелі 8'
                 },
                 phone: {
-                    title: 'Телефон',
+                    title: 'Телефон:',
                     value: '098-765-43-21'
                 },
                 email: {
-                    title: 'Електронна адреса',
+                    title: 'Електронна адреса:',
                     value: 'Rozmay@gmail.com'
                 }
             }
@@ -154,15 +154,15 @@ export default {
         footer: {
             contacts: {
                 address: {
-                    title: 'Наш адрес',
+                    title: 'Наш адрес:',
                     value: '43017, г.Луцк ул. Шота Руставели 8'
                 },
                 phone: {
-                    title: 'Телефон',
+                    title: 'Телефон:',
                     value: '098-765-43-21'
                 },
                 email: {
-                    title: 'Электронный адрес',
+                    title: 'Электронный адрес:',
                     value: 'Rozmay@gmail.com'
                 }
             }
