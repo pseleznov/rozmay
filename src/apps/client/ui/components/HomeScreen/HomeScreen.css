@@ -1,0 +1,62 @@
+.homescreenWrap {
+    width: 100%;
+}
+
+.homescreenContent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homescreenContent_title {
+    max-width: 900px;
+    font-family: MontserratLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 154.4%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.accent {
+    text-transform: uppercase;
+}
+
+.green {
+    color: #1F4214;
+}
+
+.red {
+    color: #9E0707;
+}
+
+.homescreenContent_textBlock {
+    width: 100%;
+    max-width: 830px;
+    margin-top: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homescreenContent_text {
+    width: 100%;
+    text-align: center;
+    font-family: MontserratLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 113.4%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #1F4214;
+    margin-bottom: 10px;
+}
+

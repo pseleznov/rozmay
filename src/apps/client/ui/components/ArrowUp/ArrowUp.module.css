@@ -1,0 +1,58 @@
+.arrowContainer{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    width: 64px;
+    height: 64px;
+    left: 30px;
+    bottom: 15px;
+    border-radius: 50%;
+    background: #9E0707;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    transition: all .7s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.press {
+    width: 52.5px;
+    height: 52.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.visibility {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all .7s ease;
+}
+
+.arrow {
+    width: 22px;
+    height: 11px;
+    font-size: 0;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .arrowContainer {
+        width: 46px;
+        height: 46px;
+    }
+
+    .arrow {
+        width: 14px;
+        height: 7px;
+    }
+}

@@ -1,25 +1,28 @@
 .navbarContainer {
-    flex: 1;
-    max-width: 300px;
+    width: 428px;
     height: 100%;
-    background-color: #FFE7E7;
-    border-right: 1px solid white;
+    display: flex;
+    align-items: flex-start;
 }
 
 .contentContainer {
-    width: 100%;
+    width: 428px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    font-family: Raleway;
+    font-family: Montserrat;
+    padding-left: 50px;
 }
 
 .title {
+    font-family: MontserratLight;
     width: 100%;
     font-size: 36px;
-    padding: 10px 0;
-    text-align: center;
+    font-weight: 200;
+    padding: 8px 0;
+    text-align: left;
+    letter-spacing: 0.2em;
     color: #1F4214;
 }
 
@@ -28,48 +31,104 @@
 }
 
 .navbarItem {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
     text-align: left;
-    padding: 10px;
+    padding: 13px 0;
     width: 100%;
-    background: rgb(3, 110, 110);
     user-select: none;
-    color: white;
+    color: black;
 }
 
 .navbarItem a {
     text-decoration: none;
-    color: white;
+    color: black;
+    position: relative;
 }
 
-.navbarItem a.active {
-    color: gold;
+.navbarItem a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #9E0707;
+    transition: all .3s ease;
+}
+
+.navbarItem a:hover::after {
+    width: 100%;
+}
+
+.navbarItem a.active::after {
+    width: 100%;
 }
 
 .groupTitle {
     cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.groupTitle span {
+    margin-right: 20px;
+}
+
+.groupArrow {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+
+.groupArrow img {
+    transition: transform .3s linear;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
 }
 
 .itemContent {
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-align: left;
     width: 100%;
-    background: rgb(19, 167, 167);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: 15px;
+    padding-left: 40px;
+    margin-top: 26px;
 }
 
 .subItem {
     width: 100%;
-    padding: 5px;
-    cursor: pointer;
-    border-bottom: 1px solid white;
-    flex-shrink: 1;
+    padding: 13px 0;
+    position: relative;
+}
+
+.subItem a::after {
+    background: #1F4214;
+}
+
+.subItem::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #9E0707;
 }
 
 .disable {

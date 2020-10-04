@@ -1,21 +1,35 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import footerBg from './img/background.png';
+
 import './Footer.css'
 
 const Footer = () => {
-    return <div className='footerContainer'>
-        <div className='footerItem'>
-            <div className='footerItem_name'>Наша адреса</div>
-            <div className='footerItem_content'>05440, м.Луцьк вул. Червона 3</div>
+    const langMap = useSelector(({ application }) => application.langMap);
+    const { contacts } = langMap.footer;
+    const { address, phone, email } = contacts;
+
+    return (
+        <div className='footerContainer'>
+            <div className='footerBackgroundWrap'>
+                <img src={footerBg} alt="bg"/>
+            </div>
+            <div className='footerContentContainer'>
+                <div className='footerItem'>
+                    <div className='footerItem_name'>{address.title}</div>
+                    <div className='footerItem_content'>{address.value}</div>
+                </div>
+                <div className='footerItem'>
+                    <div className='footerItem_name'>{phone.title}</div>
+                    <div className='footerItem_content'>{phone.value}</div>
+                </div>
+                <div className='footerItem'>
+                    <div className='footerItem_name'>{email.title}</div>
+                    <div className='footerItem_content'>{email.value}</div>
+                </div>
+            </div>
         </div>
-        <div className='footerItem'>
-            <div className='footerItem_name'>Телефон</div>
-            <div className='footerItem_content'>098-765-43-21</div>
-        </div>
-        <div className='footerItem'>
-            <div className='footerItem_name'>Електронна адреса</div>
-            <div className='footerItem_content'>Rozmay@gmail.com</div>
-        </div>
-    </div>
+    );
 }
 
 export default Footer;
