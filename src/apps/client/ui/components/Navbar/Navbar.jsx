@@ -9,7 +9,7 @@ const navbar = [
     { title: 'Чоловічі сорочки', link: '/products/men-shirt' },
     { title: 'Жіночі блузки', link: '/products/women-blouses' },
     { title: 'Жіночі сукні', link: '/products/women-dresses' },
-    { title: 'Парні костюми', link: '/products/paired-suits' },
+    { title: 'Парні вишиванки', link: '/products/paired-suits' },
     {
         isGroup: true,
         name: 'Одяг для дівчаток',
