@@ -87,6 +87,7 @@
 }
 
 .product_link {
+    text-transform: uppercase;
     width: 139px;
     text-align: center;
     text-decoration: none;

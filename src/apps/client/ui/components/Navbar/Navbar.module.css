@@ -60,6 +60,10 @@
     transition: all .3s ease;
 }
 
+.navbarItem a:hover::after {
+    width: 100%;
+}
+
 .navbarItem a.active::after {
     width: 100%;
 }
