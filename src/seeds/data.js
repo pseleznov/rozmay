@@ -419,21 +419,6 @@ const data = [
                 id: 4,
                 price: 500,
                 photo: ['https://i.imgur.com/lGb7bOB.jpg']
-            },
-            {
-                id: 5,
-                price: 500,
-                photo: ['https://i.imgur.com/yMjK76R.jpg']
-            },
-            {
-                id: 6,
-                price: 500,
-                photo: ['https://i.imgur.com/gXk9xmr.jpg']
-            },
-            {
-                id:7,
-                price: 500,
-                photo: ['https://i.imgur.com/fULqOrI.jpg']
             }
         ]
     },
@@ -459,6 +444,21 @@ const data = [
                 id: 4,
                 price: 500,
                 photo: ['https://i.imgur.com/lrpIAZP.jpg']
+            },
+            {
+                id: 5,
+                price: 500,
+                photo: ['https://i.imgur.com/yMjK76R.jpg']
+            },
+            {
+                id: 6,
+                price: 500,
+                photo: ['https://i.imgur.com/gXk9xmr.jpg']
+            },
+            {
+                id:7,
+                price: 500,
+                photo: ['https://i.imgur.com/fULqOrI.jpg']
             }
         ]
     },
