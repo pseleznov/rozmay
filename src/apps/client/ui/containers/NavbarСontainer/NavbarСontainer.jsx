@@ -20,11 +20,12 @@ class NavbarСontainer extends Component {
 
     render() {
         const { langMap } = this.props;
-        const { navbar } = langMap.mainPage;
+        const { navbar, navbarTitle } = langMap.mainPage;
 
         return (
             <Navbar 
-                navbar={navbar} 
+                navbar={navbar}
+                navbarTitle={navbarTitle}
                 handleClick={this.handleClick}
                 state={this.state}
             />
