@@ -108,7 +108,7 @@ export default {
                 { title: 'Чоловічі сорочки', link: '/products/men-shirt' },
                 { title: 'Жіночі блузки', link: '/products/women-blouses' },
                 { title: 'Жіночі сукні', link: '/products/women-dresses' },
-                { title: 'Парні костюми', link: '/products/paired-suits' },
+                { title: 'Парні вишиванки', link: '/products/paired-suits' },
                 {
                     isGroup: true,
                     name: 'Одяг для дівчаток',
@@ -250,31 +250,31 @@ export default {
             },
             navbarTitle: 'каталог',
             navbar: [
-                { title: 'Чоловічі сорочки', link: '/products/men-shirt' },
-                { title: 'Жіночі блузки', link: '/products/women-blouses' },
-                { title: 'Жіночі сукні', link: '/products/women-dresses' },
-                { title: 'Парні костюми', link: '/products/paired-suits' },
+                { title: 'Мужские рубашки', link: '/products/men-shirt' },
+                { title: 'Женские блузки', link: '/products/women-blouses' },
+                { title: 'Женские платья', link: '/products/women-dresses' },
+                { title: 'Парные вышиванки', link: '/products/paired-suits' },
                 {
                     isGroup: true,
-                    name: 'Одяг для дівчаток',
+                    name: 'Одежда для девочек',
                     group: [
                         { title: 'Блузки', link: '/products/clothes-for-girls-blouses' },
-                        { title: 'Плаття', link: '/products/clothes-for-girls-dresses' },
-                        { title: 'Спіднички', link: '/products/clothes-for-girls-skirts' }
+                        { title: 'Платья', link: '/products/clothes-for-girls-dresses' },
+                        { title: 'Юбочки', link: '/products/clothes-for-girls-skirts' }
                     ]
                 },
                 {
                     isGroup: true,
-                    name: 'Одяг для хлопчиків',
+                    name: 'Одежда для мальчиков',
                     group: [
-                        { title: 'Сорочки', link: '/products/clothes-for-boys-shirt' },
-                        { title: 'Шаровари', link: '/products/clothes-for-boys-trousers' }
+                        { title: 'Рубашки', link: '/products/clothes-for-boys-shirt' },
+                        { title: 'Шаровары', link: '/products/clothes-for-boys-trousers' }
                     ]
                 },
-                { title: 'Сценічний одяг', link: '/products/stage-clothes' },
-                { title: 'Спортивні костюми', link: '/products/tracksuits' },
-                { title: 'Оформлення сцен', link: '/products/scene-design' },
-                { title: 'Дрібнички і не тільки', link: '/products/trifles' }
+                { title: 'Сценическая одежда', link: '/products/stage-clothes' },
+                { title: 'Спортивные костюмы', link: '/products/tracksuits' },
+                { title: 'Оформление сцен', link: '/products/scene-design' },
+                { title: 'Безделушки и не только', link: '/products/trifles' }
             ],
             product: {
                 pricePrev: 'від',
