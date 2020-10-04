@@ -432,7 +432,7 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 500,
+                price: 350,
                 photo: ['https://i.imgur.com/TIzULJ8.jpg']
             }
         ]
@@ -442,7 +442,7 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 500,
+                price: 280,
                 photo: ['https://i.imgur.com/TIzULJ8.jpg']
             }
         ]
