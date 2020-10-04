@@ -4,87 +4,87 @@ const data = [
         value: [
             {
                 id: 1,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/A7PTQVH.jpg']
             },
             {
                 id: 2,
-                price: 100,
+                price: 650,
                 photo: ['https://i.imgur.com/zXoxniz.jpg']
             },
             {
                 id: 3,
-                price: 100,
+                price: 500,
                 photo: ['https://i.imgur.com/jXuJl3B.jpg']
             },
             {
                 id: 4,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/NP0NtTc.jpg']
             },
             {
                 id: 5,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/MGWu6GG.jpg']
             },
             {
                 id: 6,
-                price: 100,
+                price: 500,
                 photo: ['https://i.imgur.com/ZXrB4Rz.jpg']
             },
             {
                 id: 7,
-                price: 100,
+                price: 800,
                 photo: ['https://i.imgur.com/yiMHoBI.jpg']
             },
             {
                 id: 8,
-                price: 100,
+                price: 900,
                 photo: ['https://i.imgur.com/RSzMEi9.jpg']
             },
             {
                 id: 9,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/TKUNBZj.jpg']
             },
             {
                 id: 10,
-                price: 100,
+                price: 750,
                 photo: ['https://i.imgur.com/wG10X0B.jpg']
             },
             {
                 id: 11,
-                price: 100,
+                price: 1100,
                 photo: ['https://i.imgur.com/CWykPPI.jpg']
             },
             {
                 id: 12,
-                price: 100,
+                price: 750,
                 photo: ['https://i.imgur.com/MpuGs4q.jpg']
             },
             {
                 id: 13,
-                price: 100,
+                price: 900,
                 photo: ['https://i.imgur.com/sazq8ZP.jpg']
             },
             {
                 id: 14,
-                price: 100,
+                price: 850,
                 photo: ['https://i.imgur.com/oiplPgG.jpg']
             },
             {
                 id: 15,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/wuBAtJ4.jpg']
             },
             {
                 id: 16,
-                price: 100,
+                price: 650,
                 photo: ['https://i.imgur.com/LLe824b.jpg']
             },
             {
                 id: 17,
-                price: 100,
+                price: 780,
                 photo: ['https://i.imgur.com/ZRLUJjL.jpg']
             }
         ]
