@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import classNames from 'classnames';
+import fabricList from '../../../../../seeds/fabric';
 import leftArrow from './img/leftArrow.png';
 import rightArrow from './img/rightArrow.png';
 import flower from '../FlowerDivider/img/kvitochka.png';
 import cross from './img/cross.png';
 
 import './PopupProductForm.css';
+
+const mapStateToProps = ({ application }) => {
+    return {
+        lang: application.lang
+    }
+}
 
 class PopupProductForm extends Component {
 
@@ -75,7 +83,7 @@ class PopupProductForm extends Component {
     }
 
     render() {
-        const { togglePopup, activeProduct, productText } = this.props;
+        const { togglePopup, activeProduct, productText, fabric, lang } = this.props;
         const { leftArrowVisible, rightArrowVisible } = this.state;
         const invisible = activeProduct.photo.length === 1;
 
@@ -156,7 +164,13 @@ class PopupProductForm extends Component {
                                         {productText.fabric}
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
-                                        льон
+                                        {fabric.map((item, i) => {
+                                            return (
+                                                <div className='popupProductFormContainer_content_value_item' key={i}>
+                                                    {fabricList[item][lang]}
+                                                </div>
+                                            );
+                                        })}
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoPrice'>
@@ -188,4 +202,4 @@ class PopupProductForm extends Component {
     }
 };
 
-export default PopupProductForm;
+export default connect(mapStateToProps)(PopupProductForm);

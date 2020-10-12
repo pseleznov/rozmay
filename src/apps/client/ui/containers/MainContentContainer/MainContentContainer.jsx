@@ -23,6 +23,7 @@ const MainContentContainer = ({ match }) => {
     return (
         <MainContent
             products={filteredProducts.value}
+            fabric={filteredProducts.fabric}
             productText={langMap.mainPage.product}
             isPopupProductShown={isPopupProductShown}
             togglePopup={togglePopup}

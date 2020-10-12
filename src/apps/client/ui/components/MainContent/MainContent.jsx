@@ -82,7 +82,7 @@ class MainContent extends Component {
     }
 
     render() {
-        const { isPopupProductShown, products, togglePopup, isBigDesktop, productText } = this.props;
+        const { isPopupProductShown, products, togglePopup, isBigDesktop, productText, fabric } = this.props;
         const { activeProduct } = this.state;
 
         const splitProducts = isBigDesktop 
@@ -97,6 +97,7 @@ class MainContent extends Component {
                             togglePopup={togglePopup}
                             handleOrderClick={this.handleOrderClick}
                             activeProduct={activeProduct}
+                            fabric={fabric}
                             productText={productText}
                         />
                 }

@@ -212,7 +212,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .popupProductFormContainer_content_infoMateriales,
@@ -232,5 +232,12 @@
 .popupProductFormContainer_content_value {
     text-transform: uppercase;
     color: #1F4214;
+}
+
+.popupProductFormContainer_content_value_item {
+    text-transform: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 22px;
 }
 
