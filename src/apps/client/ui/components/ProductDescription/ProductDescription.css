@@ -15,7 +15,12 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 38px;
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
+}
+
+.productDescription_title_link {
+    text-decoration: none;
+    color: #1F4214;
 }
 
 .productDescription_content {

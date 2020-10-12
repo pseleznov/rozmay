@@ -47,7 +47,7 @@ class MainContent extends Component {
         return newProductsArray;
     }
 
-    createProductContainer = (productRow) => {
+    createProductContainer = (productRow, productText) => {
         return productRow.map((product, i) => {
             return (
                 <div className='product' key={i}>
@@ -59,20 +59,20 @@ class MainContent extends Component {
                             className='product_link productOrder'
                             onClick={this.handleOrderClick(product)}
                         >
-                            Замовити
+                            {productText.order}
                         </div>
                         <div
                             className='product_link productDetails'
                             onClick={this.handleDetailsClick(product)}
                         >
-                            Детальніше
+                            {productText.details}
                         </div>
                     </div>
                     <div className='product_price'>
                         {
                             product.price === 9999
-                                ? 'ціна договірна'
-                                : `від ${product.price} UAH`
+                                ? productText.negotiablePrice
+                                : `${productText.pricePrev} ${product.price} UAH`
                         }
                     </div>
                     <div className='product_article'>артикул: {product.article}</div>
@@ -82,7 +82,7 @@ class MainContent extends Component {
     }
 
     render() {
-        const { isPopupProductShown, products, togglePopup, isBigDesktop } = this.props;
+        const { isPopupProductShown, products, togglePopup, isBigDesktop, productText } = this.props;
         const { activeProduct } = this.state;
 
         const splitProducts = isBigDesktop 
@@ -93,10 +93,11 @@ class MainContent extends Component {
             <div className='contentContainer'>
                 {
                     isPopupProductShown && 
-                        <PopupProductForm 
+                        <PopupProductForm
                             togglePopup={togglePopup}
                             handleOrderClick={this.handleOrderClick}
-                            activeProduct={activeProduct} 
+                            activeProduct={activeProduct}
+                            productText={productText}
                         />
                 }
                 <div className='content'>
@@ -108,7 +109,7 @@ class MainContent extends Component {
                                     <div className={classNames('products_container', {
                                         'products_container_lastLine': productRow.length < 3
                                     })}>
-                                        {this.createProductContainer(productRow)}
+                                        {this.createProductContainer(productRow, productText)}
                                     </div>
                                 </div>
                             );

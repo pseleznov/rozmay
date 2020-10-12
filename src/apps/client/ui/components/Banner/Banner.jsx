@@ -3,7 +3,15 @@ import cross from './img/cross.png';
 
 import './Banner.css';
 
-const Banner = ({ activeProduct, setActiveProduct }) => {
+const Banner = (props) => {
+    const {
+        activeProduct, 
+        setActiveProduct,
+        phone,
+        phoneText,
+        textBelow,
+        selectedProduct
+    } = props;
     return (
         <div className='bannerWrap'>
             <div className='bannerContent'>
@@ -17,7 +25,7 @@ const Banner = ({ activeProduct, setActiveProduct }) => {
                                 <img src={cross} alt="cross"/>
                             </div>
                             <div className='bannerPopup_text'>
-                                код товару, що вам сподобався
+                                {selectedProduct}
                             </div>
                             <div className='bannerPopup_article'>
                                 {activeProduct.article}
@@ -26,14 +34,14 @@ const Banner = ({ activeProduct, setActiveProduct }) => {
                 }
                 <div className='bannerPhoneWrap'>
                     <div className='bannerPhoneText'>
-                        Для замовлення телефонуйте за номером:
+                        {phoneText}
                     </div>
                     <div className='bannerPhone'>
-                        +380-98-7654-321
+                        {phone}
                     </div>
                 </div>
                 <div className='bannerText'>
-                    Ми чекаємо на Ваші дзвінки з 9:00 до 18:00 з понеділка по п’ятницю
+                    {textBelow}
                 </div>
             </div>
         </div>

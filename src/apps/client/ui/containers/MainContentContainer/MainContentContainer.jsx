@@ -8,8 +8,8 @@ import productsFilter from './helpers/productsFilter';
 import addArticles from './helpers/addArticles';
 
 const MainContentContainer = ({ match }) => {
-    const products = useSelector(({ application }) => application.products);
-    const isPopupProductShown = useSelector(({ application }) => application.isPopupProductShown);
+    const { products, isPopupProductShown, langMap } = useSelector(({ application }) => application);
+
     const dispatch = useDispatch();
     const togglePopup = (payload) => {
         dispatch(togglePopupProduct(payload))
@@ -21,9 +21,10 @@ const MainContentContainer = ({ match }) => {
     });
 
     return (
-        <MainContent 
-            products={filteredProducts.value} 
-            isPopupProductShown={isPopupProductShown} 
+        <MainContent
+            products={filteredProducts.value}
+            productText={langMap.mainPage.product}
+            isPopupProductShown={isPopupProductShown}
             togglePopup={togglePopup}
             isBigDesktop={isBigDesktop}
         />
