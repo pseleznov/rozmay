@@ -1,21 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './ProductDescription.css';
 
-const ProductDescription = (props) => {
+const ProductDescription = ({ title, text1, text2, text3, link }) => {
     return (
         <div className='productDescriptionContainer'>
             <div className='productDescription_title'>
-                {props.title}
+                <NavLink
+                    to={link}
+                    className='productDescription_title_link'
+                >
+                    {title}
+                </NavLink>
             </div>
             <div className='productDescription_content'>
-                <div>
-                    Ми маємо досвід у пошитті сценічних костюмів
-                    для творчих колективів. І це не лише український стрій. Ми пропонуємо виготовлення костюмів
-                    для різних напрямів вашої творчої діяльності.
-                </div>
-                <div>Звертайтесь!</div>
-                <div><span className='logo_accent'>Rozmay</span> підкреслить вашу унікальність, неповторність, та допоможе у створенні чудового настрою у ваших шанувальників. </div>
+                <div>{text1}</div>
+                <div>{text2}</div>
+                {text3 && <div>{text3}</div>}
             </div>
         </div>
     );

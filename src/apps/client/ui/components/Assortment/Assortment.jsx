@@ -4,32 +4,11 @@ import ProductDescription from '../ProductDescription/ProductDescription';
 
 import './Assortment.css';
 
-const Prod = [
-    {
-        title: 'Чоловічі сорочки'
-    },
-    {
-        title: 'Жіночі блузки'
-    },
-    {
-        title: 'Жіночі сукні'
-    },
-    {
-        title: 'Жіночі блузки'
-    },
-    {
-        title: 'Жіночі сукні'
-    },
-    {
-        title: 'Сценічний одяг'
-    }
-];
-
-const Assortment = () => {
+const Assortment = ({ assortment }) => {
     return (
         <div className='assortmentContainer'>
             {
-                Prod.map((item, index) => 
+                assortment.map((item, index) => 
                     <div className='assortmentProductDescriptionWrap' key={index}>
                         <ProductDescription 
                             {...item}

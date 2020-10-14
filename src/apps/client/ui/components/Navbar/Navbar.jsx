@@ -5,11 +5,11 @@ import arrow from './img/arrow.png';
 
 import styles from './Navbar.module.css';
 
-const Navbar = ({ navbar, handleClick, state }) => {
+const Navbar = ({ navbar, navbarTitle, handleClick, state }) => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.contentContainer}>
-                <div className={styles.title}>КАТАЛОГ</div>
+                <div className={styles.title}>{navbarTitle}</div>
                 <div className={styles.navbarItems}>
                     {
                         navbar.map((item, i) => {

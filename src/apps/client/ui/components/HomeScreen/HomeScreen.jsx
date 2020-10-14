@@ -1,28 +1,30 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import FlowerDivider from '../FlowerDivider/FlowerDivider';
 
 import './HomeScreen.css';
 
 const HomeScreen = () => {
+    const langMap = useSelector(({ application }) => application.langMap);
+    const { homeScreen } = langMap.mainPage;
+
     return (
         <div className='homescreenWrap'>
             <div className='homescreenContent'>
                 <div className='homescreenContent_title'>
-                    Одяг який <span className='accent green'>личить</span>, 
-                    безперечно, <span className='accent green'>всім</span> – 
-                    це наша <span className='accent red'>українська вишиванка</span>.
+                    {homeScreen.title}
                 </div>
                <FlowerDivider />
                 <div className='homescreenContent_textBlock'>
-                    <div className='homescreenContent_text'>
-                        Ошатна і щоразу неповторна, вона є ледь не в кожного українця.
-                    </div>
-                    <div className='homescreenContent_text'>
-                        Це чудовий подарунок друзям, родичам і діловим партнерам.
-                    </div>
-                    <div className='homescreenContent_text'>
-                        Це національний здобуток, яким ми пишаємось і з радістю ділимось з усім світом.
-                    </div>
+                    {
+                        homeScreen.text.map((item, i) => {
+                            return (
+                                <div className='homescreenContent_text' key={i}>
+                                    {item}
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </div>

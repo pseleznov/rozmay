@@ -1,5 +1,6 @@
 const data = [
     {
+        fabric: [0, 1, 2],
         productId: 'men-shirt',
         value: [
             {
@@ -90,6 +91,7 @@ const data = [
         ]
     },
     {
+        fabric: [3, 2, 4, 5, 6, 7],
         productId: 'women-blouses',
         value: [
             {
@@ -214,6 +216,7 @@ const data = [
         ]
     },
     {
+        fabric: [3, 2, 8],
         productId: 'women-dresses',
         value: [
             {
@@ -343,6 +346,7 @@ const data = [
         ]
     },
     {
+        fabric: [4, 2],
         productId: 'paired-suits',
         value: [
             {
@@ -362,6 +366,7 @@ const data = [
         ]
     },
     {
+        fabric: [3, 2, 4, 5, 6, 7],
         productId: 'clothes-for-girls-blouses',
         value: [
             {
@@ -381,6 +386,7 @@ const data = [
         ]
     },
     {
+        fabric: [3, 2, 8],
         productId: 'clothes-for-girls-dresses',
         value: [
             {
@@ -428,6 +434,7 @@ const data = [
         value: []
     },
     {
+        fabric: [0, 1, 2],
         productId: 'clothes-for-boys-shirt',
         value: [
             {
@@ -438,6 +445,7 @@ const data = [
         ]
     },
     {
+        fabric: [11, 12],
         productId: 'clothes-for-boys-trousers',
         value: [
             {
@@ -448,6 +456,7 @@ const data = [
         ]
     },
     {
+        fabric: [13],
         productId: 'stage-clothes',
         value: [
             {
@@ -704,6 +713,7 @@ const data = [
         ]
     },
     {
+        fabric: [9, 10],
         productId: 'tracksuits',
         value: [            
             {
@@ -776,6 +786,7 @@ const data = [
         ]
     },
     {
+        fabric: [13],
         productId: 'scene-design',
         value: [
             {
@@ -796,6 +807,7 @@ const data = [
         ]
     },
     {
+        fabric: [14],
         productId: 'trifles',
         value: [
             {

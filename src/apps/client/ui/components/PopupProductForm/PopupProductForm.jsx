@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import classNames from 'classnames';
+import fabricList from '../../../../../seeds/fabric';
 import leftArrow from './img/leftArrow.png';
 import rightArrow from './img/rightArrow.png';
 import flower from '../FlowerDivider/img/kvitochka.png';
 import cross from './img/cross.png';
 
 import './PopupProductForm.css';
+
+const mapStateToProps = ({ application }) => {
+    return {
+        lang: application.lang
+    }
+}
 
 class PopupProductForm extends Component {
 
@@ -75,7 +83,7 @@ class PopupProductForm extends Component {
     }
 
     render() {
-        const { togglePopup, activeProduct } = this.props;
+        const { togglePopup, activeProduct, productText, fabric, lang } = this.props;
         const { leftArrowVisible, rightArrowVisible } = this.state;
         const invisible = activeProduct.photo.length === 1;
 
@@ -90,7 +98,7 @@ class PopupProductForm extends Component {
                         <img src={cross} alt="cross"/>
                     </div>
                     <div className='popupProductForm_orderButton' onClick={this.onOrderClick(activeProduct)}>
-                        Замовити
+                        {productText.order}
                     </div>
                     <div className='popupProductFormContainer_content'>
                         <div className='popupProductFormContainer_content_slider' ref={this.slider}>
@@ -153,27 +161,33 @@ class PopupProductForm extends Component {
                             <div className='popupProductFormContainer_content_info'>
                                 <div className='popupProductFormContainer_content_infoMateriales'>
                                     <div className='popupProductFormContainer_content_name'>
-                                        тканини
+                                        {productText.fabric}
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
-                                        льон
+                                        {fabric.map((item, i) => {
+                                            return (
+                                                <div className='popupProductFormContainer_content_value_item' key={i}>
+                                                    {fabricList[item][lang]}
+                                                </div>
+                                            );
+                                        })}
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoPrice'>
                                     <div className='popupProductFormContainer_content_name'>
-                                        ціна
+                                        {productText.productPrice}
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
                                         {
                                             activeProduct.price === 9999
-                                                ? 'ціна договірна'
-                                                : `від ${activeProduct.price} UAH`
+                                                ? productText.negotiablePrice
+                                                : `${productText.pricePrev} ${activeProduct.price} UAH`
                                         }
                                     </div>
                                 </div>
                                 <div className='popupProductFormContainer_content_infoArticle'>
                                     <div className='popupProductFormContainer_content_name'>
-                                        код товару
+                                        {productText.productCode}
                                     </div>
                                     <div className='popupProductFormContainer_content_value'>
                                         {activeProduct.article}
@@ -188,4 +202,4 @@ class PopupProductForm extends Component {
     }
 };
 
-export default PopupProductForm;
+export default connect(mapStateToProps)(PopupProductForm);
