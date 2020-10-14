@@ -61,7 +61,7 @@ export default {
                 },
                 email: {
                     title: 'Електронна адреса:',
-                    value: 'Rozmay@gmail.com'
+                    value: 'vyshyvanka.nata@gmail.com'
                 }
             }
         },
@@ -234,7 +234,7 @@ export default {
                 },
                 email: {
                     title: 'Электронный адрес:',
-                    value: 'Rozmay@gmail.com'
+                    value: 'vyshyvanka.nata@gmail.com'
                 }
             }
         },
