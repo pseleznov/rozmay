@@ -66,7 +66,7 @@ class Helmet extends Component {
             <meta name='og:image' content={meta.image} />
             <meta name='keywords' content={meta.keywords} />
             <link rel='canonical' href={meta.canonical} />
-            <meta property="og:type" content="website">
+            <meta property="og:type" content="website" />
             {/* {meta.langLinks.map((langLink, i) => <link key={i} rel='alternate' hreflang={langLink.lang} href={langLink.link} />)} */}
         </ReactHelmet>;
     }
