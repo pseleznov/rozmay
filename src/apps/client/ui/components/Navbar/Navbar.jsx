@@ -5,7 +5,7 @@ import arrow from './img/arrow.png';
 
 import styles from './Navbar.module.css';
 
-const Navbar = ({ navbar, navbarTitle, handleClick, state }) => {
+const Navbar = ({ navbar, navbarTitle, handleClick, state, handleBurgerClick, menuIsActive }) => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.contentContainer}>
@@ -40,6 +40,7 @@ const Navbar = ({ navbar, navbarTitle, handleClick, state }) => {
                                                         <NavLink
                                                             to={item.link}
                                                             activeClassName={styles.active}
+                                                            onClick={() => menuIsActive && handleBurgerClick(!menuIsActive)}
                                                         >
                                                             {item.title}
                                                         </NavLink>
@@ -55,6 +56,7 @@ const Navbar = ({ navbar, navbarTitle, handleClick, state }) => {
                                         <NavLink
                                             to={`${item.link}`}
                                             activeClassName={styles.active}
+                                            onClick={() => menuIsActive && handleBurgerClick(!menuIsActive)}
                                         >
                                             {item.title}
                                         </NavLink>

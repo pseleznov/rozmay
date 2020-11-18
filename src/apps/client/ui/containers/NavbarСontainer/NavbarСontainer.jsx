@@ -19,7 +19,7 @@ class NavbarСontainer extends Component {
     }
 
     render() {
-        const { langMap } = this.props;
+        const { langMap, menuIsActive, handleBurgerClick } = this.props;
         const { navbar, navbarTitle } = langMap.mainPage;
 
         return (
@@ -28,6 +28,8 @@ class NavbarСontainer extends Component {
                 navbarTitle={navbarTitle}
                 handleClick={this.handleClick}
                 state={this.state}
+                handleBurgerClick={handleBurgerClick}
+                menuIsActive={menuIsActive}
             />
         );
     }
