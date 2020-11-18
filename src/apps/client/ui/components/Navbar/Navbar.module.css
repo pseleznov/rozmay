@@ -135,3 +135,23 @@
 .disable {
     display: none;
 }
+
+@media (max-width: 1024px) {
+    .navbarContainer {
+        width: auto;
+    }
+    
+    .contentContainer {
+        width: auto;
+        padding: 0;
+    }
+
+    .title {
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .navbarItem {
+        text-align: center;
+    }
+}
