@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import footerBg from './img/background.png';
+import mobileBg from './img/mobileBg.png';
 
 import './Footer.css'
 
@@ -12,7 +13,8 @@ const Footer = () => {
     return (
         <div className='footerContainer'>
             <div className='footerBackgroundWrap'>
-                <img src={footerBg} alt="bg"/>
+                <img className='footerBackgroundWrap_bigImg' src={footerBg} alt="bg"/>
+                <img className='footerBackgroundWrap_mobileImg' src={mobileBg} alt="bg"/>
             </div>
             <div className='footerContentContainer'>
                 <div className='footerItem'>

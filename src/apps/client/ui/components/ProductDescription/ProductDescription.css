@@ -47,3 +47,18 @@
 .productDescription_content > div:last-child {
     margin-bottom: 0;
 }
+
+@media (max-width: 600px) {
+    .productDescription_title {
+        font-size: 20px;
+        line-height: 137.9%;
+        letter-spacing: 0.06em;
+    }
+
+    .productDescription_content {
+        font-size: 14px;
+        line-height: 137.9%;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+}

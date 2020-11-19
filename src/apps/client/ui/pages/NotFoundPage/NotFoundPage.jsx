@@ -1,10 +1,14 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import flower from './img/flower.png';
 
 import './NotFoundPage.css';
 
 const NotFoundPage = (props) => {
+    const langMap = useSelector(({ application }) => application.langMap);
+    const { notFoundPage: text } = langMap;
+
     return (
         <div className='notFoundPageContainer'>
             <div className='notFoundPageContent'>
@@ -17,13 +21,13 @@ const NotFoundPage = (props) => {
                 </div>
                 <div className='notFoundPageContent_text'>
                     <div>
-                        Вибачте,
+                        {text.text1}
                     </div>
                     <div>
-                        ми не можемо знайти сторінку,
+                        {text.text2}
                     </div>
                     <div>
-                        яку Ви шукали
+                        {text.text3}
                     </div>
                 </div>
             </div>
@@ -32,7 +36,7 @@ const NotFoundPage = (props) => {
                     to='/'
                     className='notFoundPage_buttonLink'
                 >
-                    Головна
+                    {text.button}
                 </NavLink>
             </div>
         </div>

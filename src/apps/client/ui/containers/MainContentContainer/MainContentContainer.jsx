@@ -20,6 +20,10 @@ const MainContentContainer = ({ match }) => {
         query: '(min-device-width: 1400px)'
     });
 
+    const isTabletDesktop = useMediaQuery({
+        query: '(min-device-width: 700px)'
+    });
+
     return (
         <MainContent
             products={filteredProducts.value}
@@ -28,6 +32,7 @@ const MainContentContainer = ({ match }) => {
             isPopupProductShown={isPopupProductShown}
             togglePopup={togglePopup}
             isBigDesktop={isBigDesktop}
+            isTabletDesktop={isTabletDesktop}
         />
     );
 }

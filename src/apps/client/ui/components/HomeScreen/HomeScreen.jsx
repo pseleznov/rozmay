@@ -7,10 +7,14 @@ import './HomeScreen.css';
 const HomeScreen = () => {
     const langMap = useSelector(({ application }) => application.langMap);
     const { homeScreen } = langMap.mainPage;
+    const { logo } = langMap.header;
 
     return (
         <div className='homescreenWrap'>
             <div className='homescreenContent'>
+                    <div className="homescreenLogoWrap">
+                        {logo}
+                    </div>
                 <div className='homescreenContent_title'>
                     {homeScreen.title}
                 </div>

@@ -39,6 +39,11 @@
     margin-right: 20px;
 }
 
+.notFoundPageContent_errorWrap img {
+    width: 100%;
+    height: 100%;
+}
+
 .notFoundPageContent_text {
     margin-left: 55px;
 }
@@ -80,6 +85,56 @@
     text-transform: uppercase;
     letter-spacing: 0.275em;
     color: #FFFFFF;
+}
+
+@media (max-width: 1100px) {
+    .notFoundPageContainer {
+        margin-top: 48px;
+    }
+
+    .notFoundPageContent_text {
+        margin-left: 20px;
+    }
+
+    .notFoundPageContent_text > div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .notFoundPageContent {
+        flex-direction: column;
+    }
+
+    .notFoundPageContent_text {
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
+    .notFoundPageContent_text > div {
+        font-size: 15px;
+        line-height: 118.4%;
+        justify-content: center;
+    }
+
+    .notFoundPage_button {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .notFoundPageContent_error span {
+        font-size: 100px;
+    }
+
+    .notFoundPageContent_errorWrap {
+        width: 89px;
+        height: 103px;
+    }
+
+    .notFoundPage_button a {
+        padding: 14px 42px;
+    }
 }
 
 

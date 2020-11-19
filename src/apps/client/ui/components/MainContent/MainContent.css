@@ -106,3 +106,15 @@
     background: linear-gradient(181.7deg, #9FA7B9 1.57%, #FFFFFF 113.8%);
 }
 
+@media(max-width: 1200px) {
+    .content {
+        padding: 8px 20px 0;
+    }
+}
+
+@media(max-width: 1100px) {
+    .content {
+        padding: 0;
+    }
+}
+
