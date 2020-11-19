@@ -10,14 +10,14 @@ import './MainContent.css';
 class MainContent extends Component {
     state = {
         activeProduct: {}
-    }
+    };
 
     handleDetailsClick = (activeProduct) => () => {
         this.props.togglePopup(true);
         this.setState({
             activeProduct
         });
-    }
+    };
 
     handleOrderClick = (activeProduct) => () => {
         this.props.togglePopup(false);
@@ -27,7 +27,16 @@ class MainContent extends Component {
             left: 0,
             behavior: 'smooth'
         });
-    }
+    };
+
+    divideIntoOne = (products) => {
+        const newProductsArray = [];
+        for (let i = 0; i < products.length; i++) {
+            const tempArray = products.slice(i, i + 1);
+            newProductsArray.push(tempArray);
+        }
+        return newProductsArray;
+    };
 
     divideIntoTwo = (products) => {
         const newProductsArray = [];
@@ -36,7 +45,7 @@ class MainContent extends Component {
             newProductsArray.push(tempArray);
         }
         return newProductsArray;
-    }
+    };
 
     divideIntoThree = (products) => {
         const newProductsArray = [];
@@ -45,7 +54,7 @@ class MainContent extends Component {
             newProductsArray.push(tempArray);
         }
         return newProductsArray;
-    }
+    };
 
     createProductContainer = (productRow, productText) => {
         return productRow.map((product, i) => {
@@ -79,15 +88,24 @@ class MainContent extends Component {
                 </div>
             );
         });
-    }
+    };
 
     render() {
-        const { isPopupProductShown, products, togglePopup, isBigDesktop, productText, fabric } = this.props;
+        const { 
+            isPopupProductShown,
+            products, togglePopup,
+            isBigDesktop,
+            isTabletDesktop,
+            productText,
+            fabric
+        } = this.props;
         const { activeProduct } = this.state;
 
         const splitProducts = isBigDesktop 
             ? this.divideIntoThree(products)
-            : this.divideIntoTwo(products);
+            : isTabletDesktop
+                ? this.divideIntoTwo(products)
+                : this.divideIntoOne(products);
 
         return (
             <div className='contentContainer'>

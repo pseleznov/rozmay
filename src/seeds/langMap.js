@@ -172,6 +172,12 @@ export default {
                     link: '/products/stage-clothes'
                 }
             ]
+        },
+        notFoundPage: {
+            button: 'Головна',
+            text1: 'Вибачте,',
+            text2: 'ми не можемо знайти сторінку,',
+            text3: 'яку Ви шукали'
         }
     },
     ru: {
@@ -343,6 +349,12 @@ export default {
                 text3: 'ROZMAY подчеркнет Вашу уникальность, неповторимость и поможет создать чудесное настроение почитателей Вашего таланта.',
                 link: '/products/stage-clothes'
             }]
+        },
+        notFoundPage: {
+            button: 'Главная',
+            text1: 'Простите,',
+            text2: 'мы не можем найти страницу,',
+            text3: 'которую вы искали'
         }
     }
 }

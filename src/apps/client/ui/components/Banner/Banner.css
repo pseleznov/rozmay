@@ -101,3 +101,24 @@
         transform: scale(1.05);
     }
 }
+
+@media(max-width: 1100px) {
+    .bannerWrap {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .bannerPhoneWrap {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .bannerText {
+        font-size: 16px;
+    }
+}
+
+
+
+
