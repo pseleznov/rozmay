@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import togglePopupProduct from '../../../actions/togglePopupProduct';
 import MainContent from '../../components/MainContent/MainContent';
+import NotAvailableProduct from '../../components/NotAvailableProduct/NotAvailableProduct';
 import productsFilter from './helpers/productsFilter';
 import addArticles from './helpers/addArticles';
 
@@ -25,15 +26,18 @@ const MainContentContainer = ({ match }) => {
     });
 
     return (
-        <MainContent
-            products={filteredProducts.value}
-            fabric={filteredProducts.fabric}
-            productText={langMap.mainPage.product}
-            isPopupProductShown={isPopupProductShown}
-            togglePopup={togglePopup}
-            isBigDesktop={isBigDesktop}
-            isTabletDesktop={isTabletDesktop}
-        />
+        filteredProducts.value.length 
+            ?
+                <MainContent
+                    products={filteredProducts.value}
+                    fabric={filteredProducts.fabric}
+                    productText={langMap.mainPage.product}
+                    isPopupProductShown={isPopupProductShown}
+                    togglePopup={togglePopup}
+                    isBigDesktop={isBigDesktop}
+                    isTabletDesktop={isTabletDesktop}
+                />
+            :   <NotAvailableProduct /> 
     );
 }
 
