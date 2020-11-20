@@ -162,3 +162,24 @@
         text-align: center;
     }
 }
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .navbarItem {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .subItem {
+        padding: 10px 0;
+    }
+
+    .itemContent {
+        font-size: 18px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+}
