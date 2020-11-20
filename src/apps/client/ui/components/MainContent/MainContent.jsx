@@ -8,9 +8,18 @@ import setActiveProduct from '../../../actions/setActiveProduct';
 import './MainContent.css';
 
 class MainContent extends Component {
+    imgRefs = this.props.products.map(() => React.createRef());
+
     state = {
-        activeProduct: {}
+        activeProduct: {},
+        isHorizontalPicture: {}
     };
+
+    UNSAFE_componentWillReceiveProps(nextProps) {
+        if (this.props.products !== nextProps.products) {
+            this.imgRefs = nextProps.products.map(() => React.createRef());
+        }
+    }
 
     handleDetailsClick = (activeProduct) => () => {
         this.props.togglePopup(true);
@@ -56,12 +65,33 @@ class MainContent extends Component {
         return newProductsArray;
     };
 
+    checkImgProperties = (index) => {
+        const pictureWidth = this.imgRefs[index].current.naturalWidth;
+        const pictureHeight = this.imgRefs[index].current.naturalHeight
+
+        this.setState({
+            isHorizontalPicture: {
+                ...this.state.isHorizontalPicture,
+                [index]: pictureWidth > pictureHeight
+            }
+        });
+    };
+
     createProductContainer = (productRow, productText) => {
+        const { isHorizontalPicture } = this.state;
         return productRow.map((product, i) => {
             return (
                 <div className='product' key={i}>
                     <div className='product_img_container'>
-                        <img className='product_img' src={product.photo[0]} alt="product" />
+                        <img 
+                            className={classNames('product_img', {
+                                'product_img_horizontal': isHorizontalPicture[product.id - 1]
+                            })} 
+                            src={product.photo[0]} 
+                            alt="product"
+                            ref={this.imgRefs[product.id - 1]}
+                            onLoad={() => this.checkImgProperties(product.id - 1)}
+                        />
                     </div>
                     <div className='product_buttonsContainer'>
                         <div
@@ -93,7 +123,8 @@ class MainContent extends Component {
     render() {
         const { 
             isPopupProductShown,
-            products, togglePopup,
+            products,
+            togglePopup,
             isBigDesktop,
             isTabletDesktop,
             productText,
