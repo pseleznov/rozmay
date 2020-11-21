@@ -28,7 +28,8 @@ class PopupProductForm extends Component {
         position: 0,
         photos: this.props.activeProduct.photo.length,
         leftArrowVisible: false,
-        rightArrowVisible: true
+        rightArrowVisible: true,
+        activeDot: 0
     }
 
     handleArrowClick = (direction) => () => {
@@ -78,13 +79,25 @@ class PopupProductForm extends Component {
         });
     }
 
+    handleDotClick = (dotNumber) => () => {
+        const step = this.slider.current.offsetWidth;
+        const gallery = this.gallery.current;
+        const offset = step * dotNumber;
+        gallery.style.marginLeft = `-${offset}px`;
+
+        this.setState({
+            position: offset,
+            activeDot: dotNumber
+        });
+    }
+
     onOrderClick = (activeProduct) => () => {
         this.props.handleOrderClick(activeProduct)();
     }
 
     render() {
         const { togglePopup, activeProduct, productText, fabric, lang } = this.props;
-        const { leftArrowVisible, rightArrowVisible } = this.state;
+        const { leftArrowVisible, rightArrowVisible, activeDot } = this.state;
         const invisible = activeProduct.photo.length === 1;
 
         return (
@@ -143,6 +156,24 @@ class PopupProductForm extends Component {
                                     alt="right"
                                 />
                             </div>
+                            {
+                                activeProduct.photo.length > 1 &&
+                                <div className='popupProductFormContainer_pagination'>
+                                    {
+                                        activeProduct.photo.map((item, i) => {
+                                            return (
+                                                <div 
+                                                    className={classNames('popupProductFormContainer_dot', {
+                                                        'popupProductFormContainer_activeDot': activeDot === i
+                                                    })}
+                                                    key={i}
+                                                    onClick={this.handleDotClick(i)}
+                                                />
+                                            );
+                                        })
+                                    }
+                                </div>
+                            }
                         </div>
                         <div className='popupProductForm_divider'>
                             <div className='popupProductForm_flowersBox'>
