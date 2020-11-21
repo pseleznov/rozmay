@@ -273,7 +273,7 @@
     }
 
     .headerTop_menu_active {
-        height: 100vh;
+        height: calc(100vh - 47px);
         transition: height .3s ease;
     }
 
