@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import setLang from '../../../actions/setLang';
 import classNames from 'classnames';
 import headerBg from './img/header.png';
@@ -26,9 +26,9 @@ const Header = () => {
             </div>
             <div className='headerContentContainer'>
                 <div className="headerLogo">
-                    <div className="headerLogoWrap">
+                    <Link to="/" className="headerLogoWrap">
                         {logo}
-                    </div>
+                    </Link>
                 </div>
                 <div className='headerTop'>
                     <div 
