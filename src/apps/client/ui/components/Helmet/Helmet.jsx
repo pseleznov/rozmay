@@ -29,7 +29,10 @@ class Helmet extends Component {
     getMeta = ({ location: { pathname } }) => {
         // const NOT_FOUND_ROUTE_ID = 'notFound';
         /* eslint-disable-next-line max-len */
-        const KEYWORDS = 'вишиванки, свята, святковий одяг, новорічні костюми, сценічний одяг, сцена, костюми для виступів, пошиття костюмів';
+        const KEYWORDS = `вишиванки, свята, святковий одяг, новорічні костюми, сценічний одяг, сцена, костюми для виступів, пошиття костюмів
+            розмай, рубашки, пошив на заказ, rozmay, луцьк, луцк, занавес на заказ, Купити вишиванку Луцьк, магазин вишиванок Луцьк,
+            вишиванка дешево купити Луцьк, українська вишиванка Луцьк, вишиванки для пари Луцьк, чоловічі вишиванки м. Луцьк,
+            вишиванки жіночі купити Луцьк, купити дитячу вишиванку Луцьк, одяг на замовлення, одяг в луцьку`;
         const IMAGE = 'https://i.imgur.com/nTkETjE.png';
         const SITE_NAME = 'Rozmay';
        
@@ -39,7 +42,7 @@ class Helmet extends Component {
             return {
                 lang: 'ua',
                 title: 'Rozmay - Вишито серцем',
-                description: 'Вишиванки на будь-який смак',
+                description: 'Вишиванки на будь-який смак для всієї родини',
                 siteName: SITE_NAME,
                 keywords: KEYWORDS,
                 image: IMAGE,
