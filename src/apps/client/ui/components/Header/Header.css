@@ -259,21 +259,20 @@
 
     .headerTop_menu {
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         z-index: 1;
         left: 0;
         right: 0;
         top: 48px;
         height: 0vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: auto;
         background: white;
         margin: 0;
         transition: height .3s ease .3s;
     }
 
     .headerTop_menu_active {
-        height: 100vh;
+        height: calc(100vh - 48px);
         transition: height .3s ease;
     }
 
