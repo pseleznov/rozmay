@@ -53,7 +53,7 @@ export default {
             contacts: {
                 address: {
                     title: 'Наша адреса:',
-                    value: '43017, м.Луцьк вул. Шота Руставелі 9'
+                    value: '43017, м.Луцьк, вул. Шота Руставелі, 9'
                 },
                 phone: {
                     title: 'Телефон:',
@@ -235,7 +235,7 @@ export default {
             contacts: {
                 address: {
                     title: 'Наш адрес:',
-                    value: '43017, г.Луцк ул. Шота Руставели 9'
+                    value: '43017, г.Луцк, ул. Шота Руставели, 9'
                 },
                 phone: {
                     title: 'Телефон:',
