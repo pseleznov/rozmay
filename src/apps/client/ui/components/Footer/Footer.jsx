@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className='footerItem'>
                     <div className='footerItem_name'>{address.title}</div>
                     <div className='footerItem_content'>
-                        <a href="https://goo.gl/maps/onuY9ctiys9pCCyG7">{address.value}</a>
+                        <a href="https://goo.gl/maps/onuY9ctiys9pCCyG7" target="_blank">{address.value}</a>
                     </div>
                 </div>
                 <div className='footerItem'>
