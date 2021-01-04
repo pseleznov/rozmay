@@ -19,15 +19,21 @@ const Footer = () => {
             <div className='footerContentContainer'>
                 <div className='footerItem'>
                     <div className='footerItem_name'>{address.title}</div>
-                    <div className='footerItem_content'>{address.value}</div>
+                    <div className='footerItem_content'>
+                        <a href="https://goo.gl/maps/onuY9ctiys9pCCyG7">{address.value}</a>
+                    </div>
                 </div>
                 <div className='footerItem'>
                     <div className='footerItem_name'>{phone.title}</div>
-                    <div className='footerItem_content'>{phone.value}</div>
+                    <div className='footerItem_content'>
+                        <a target="blank" href={"tel:" + phone.value}>{phone.value}</a>
+                    </div>
                 </div>
                 <div className='footerItem'>
                     <div className='footerItem_name'>{email.title}</div>
-                    <div className='footerItem_content'>{email.value}</div>
+                    <div className='footerItem_content'>
+                        <a target="blank" href={"mailto:" + email.value}>{email.value}</a>
+                    </div>
                 </div>
             </div>
         </div>
