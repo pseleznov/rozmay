@@ -58,6 +58,11 @@
     font-weight: 300;
 }
 
+.footerItem_content a {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 1400px) {
     .footerItem {
         font-size: 20px;
