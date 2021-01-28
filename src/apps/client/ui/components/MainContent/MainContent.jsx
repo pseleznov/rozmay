@@ -26,6 +26,10 @@ class MainContent extends Component {
         this.setState({
             activeProduct
         });
+
+        window.dataLayer.push({
+            event: 'details_click'
+        });
     };
 
     handleOrderClick = (activeProduct) => () => {
